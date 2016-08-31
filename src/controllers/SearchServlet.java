@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
+ * This is what controls the search function
  * Servlet implementation class SearchServlet
  */
 @WebServlet("/SearchServlet")
