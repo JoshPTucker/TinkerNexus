@@ -9,10 +9,10 @@
 		<sourceDirectory>src</sourceDirectory>
 		<resources>
       <resource>
-        <directory>C:\Users\tucke_000\workspace\TinkerNexus\src</directory>
+        <directory>TinkerNexus\src</directory>
       </resource>
       <resource>
-        <directory>C:\Users\tucke_000\workspace\TinkerNexus\WebContent</directory>
+        <directory>TinkerNexus\WebContent</directory>
       </resource>
     </resources>
     
