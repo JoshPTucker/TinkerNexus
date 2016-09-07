@@ -1,87 +1,86 @@
-*{
-    border: 1px solid red !important;
+* {
+	border: 1px solid red !important;
 }
 
-*{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-    background-color: transparent;
+	background-color: transparent;
 }
 
-.html { 
-  background: url('images/background.jpg') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.html {
+	background: url('images/background.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .container {
-    background-color: transparent;
+	background-color: transparent;
 }
 
 .row {
-    background-color: transparent;
+	background-color: transparent;
 }
 
 .col-md-12 {
-    padding-left: 0px;
-    padding-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
-.slogan{
-    font-size: 200%;
-    color: white;
+.slogan {
+	font-size: 200%;
+	color: white;
 }
 
 .pagetext {
-    color: white;
+	color: white;
 }
 
 .bgimg {
-    background-image: url('images/Banner-Bottom.png');
+	background-image: url('images/Banner-Bottom.png');
 }
 
 .fProjects {
-    
+	
 }
 
 .slider_dots {
-    
+	
 }
 
 /* the slides */
 .slick-slide {
-    margin: 0 .5%;
+	margin: 0 .5%;
 }
 /* the parent */
 .slick-list {
-    margin: 0 -.5%;
+	margin: 0 -.5%;
 }
 
 .relative {
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 .absolute {
-    position: absolute;
-    right: 0px;
-    top: 4.4%;
+	position: absolute;
+	right: 0px;
+	top: 4.4%;
 }
 
 #slide_container {
-    display: flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-around;   
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: row;
+	justify-content: center;
+	justify-content: space-around;
 }
