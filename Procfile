@@ -1,1 +1,1 @@
-web:    sh target/TinkerNexus-0.0.1-SNAPSHOT/index.html
+web:    
