@@ -59,7 +59,7 @@
         <directory>C:\Users\tucke_000\workspace\TinkerNexus\src</directory>
       </resource>
       <resource>
-        <directory>C:\Users\tucke_000\workspace\TinkerNexus\WebContent</directory>
+        <directory>C:\Users\tucke_000\workspace\TinkerNexus\WebApp</directory>
       </resource>
     </resources>
 		<plugins>
@@ -71,8 +71,8 @@
                 <assembleDirectory>target</assembleDirectory>
                 <programs>
                     <program>
-                        <mainClass>launch.Main</mainClass>
-                        <name>webapp</name>
+                        <mainClass>Main.Java</mainClass>
+                        <name>WebApp</name>
                     </program>
                 </programs>
             </configuration>
