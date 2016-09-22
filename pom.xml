@@ -54,12 +54,13 @@
   </dependencies>
 	<build>
 		<sourceDirectory>Java Resources</sourceDirectory>
+		
 		<resources>
       <resource>
         <directory>C:\Users\tucke_000\workspace\TinkerNexus\src</directory>
       </resource>
       <resource>
-        <directory>C:\Users\tucke_000\workspace\TinkerNexus\WebApp</directory>
+        <directory>C:\Users\tucke_000\workspace\TinkerNexus\WebContent</directory>
       </resource>
     </resources>
 		<plugins>
