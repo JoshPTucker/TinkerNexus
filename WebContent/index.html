@@ -25,8 +25,8 @@ and open the template in the editor.
         <link rel="stylesheet" href="CSS/newcss.css">
         
         <!-- links for the login section css -->
-        <link rel="stylesheet" href="normalize.css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="CSS/normalize.css">
+        <link rel="stylesheet" href="CSS/style.css">
         
         <!-- link the slider css file for the "About Us" (later "Featured Projects")
              slide show -->
@@ -40,13 +40,13 @@ and open the template in the editor.
         <div class="row">
             <div>
                 <!-- Center the logo, make it responsive, create class="relative" to help position the login area -->
-                <img class="relative center-block img-responsive" src="CSS/images/NewLogo.png" width="7%" height="7%"alt="logo">
+                <img class="relative center-block img-responsive" src="images/NewLogo.png" width="7%" height="7%"alt="logo">
                 
                 <!-- Position the login area in spite of the margin space taken up by the logo using class="absolute" and placing
                     the login div within the logo div. -->
                     <div class="absolute">
                         <section class="loginform cf">
-		<form name="login" action="index_submit" method="get" accept-charset="utf-8">
+		<form name="login" action="LoginServlet" method="post" accept-charset="utf-8">
 			<ul>
 				<li>
 					<label for="usermail">Email</label>
@@ -71,7 +71,7 @@ and open the template in the editor.
                 <!--Create a div to contain the banner -->
                 <div class="col-md-12">
                     <!-- implement the image -->
-                    <img src="CSS/images/bannertop.png" alt="Tinker Nexus" class="img-responsive center-block"/>
+                    <img src="images/bannertop.png" alt="Tinker Nexus" class="img-responsive center-block"/>
                 </div>
         </div>
         
@@ -90,7 +90,7 @@ and open the template in the editor.
             <!-- Create a div to contain the banner -->
             <div class="col-md-12">
                 <!-- Implement the banner -->
-                <img src="CSS/images/AboutUs.png" alt="About Us" class="img-responsive center-block"/>
+                <img src="images/AboutUs.png" alt="About Us" class="img-responsive center-block"/>
             </div>
         </div>
         
@@ -98,12 +98,12 @@ and open the template in the editor.
         <!-- Create a row to contain the "body" of the website -->
         <div class="fProjects" id="slide_container">
             <!-- Implement a carousel that will contain all the fancy stuff -->
-            <div class="col-md-3"><img src="CSS/images/ProjectFrame.png" class="img-responsive" alt="project frame"/></div>
-            <div class="col-md-3"><img src="CSS/images/ProjectFrame.png" class="img-responsive" alt="project frame"/></div>
-            <div class="col-md-3"><img src="CSS/images/ProjectFrame.png" class="img-responsive" alt="project frame"/></div>
-            <div class="col-md-3"><img src="CSS/images/ProjectFrame.png" class="img-responsive" alt="project frame"/></div>
-            <div class="col-md-3"><img src="CSS/images/ProjectFrame.png" class="img-responsive" alt="project frame"/></div>
-            <div class="col-md-3"><img src="CSS/images/ProjectFrame.png" class="img-responsive" alt="project frame"/></div>
+            <div class="col-md-3"><img src="images/ProjectFrame.png" class="img-responsive" alt="project frame"/></div>
+            <div class="col-md-3"><img src="images/ProjectFrame.png" class="img-responsive" alt="project frame"/></div>
+            <div class="col-md-3"><img src="images/ProjectFrame.png" class="img-responsive" alt="project frame"/></div>
+            <div class="col-md-3"><img src="images/ProjectFrame.png" class="img-responsive" alt="project frame"/></div>
+            <div class="col-md-3"><img src="images/ProjectFrame.png" class="img-responsive" alt="project frame"/></div>
+            <div class="col-md-3"><img src="images/ProjectFrame.png" class="img-responsive" alt="project frame"/></div>
         </div>
         
         <div class="slick-dots"></div>
