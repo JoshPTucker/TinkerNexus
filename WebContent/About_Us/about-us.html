@@ -4,13 +4,49 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
-<head>
-<title>TODO supply a title</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-	<div>TODO write content</div>
-</body>
+<html style="background-image: url('../CSS/images/background.jpg')">
+    <head>
+        <title>TinkerNexus: The Social Networking Site for Makers!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        
+        <!-- the following tag makes it so that the site can bu viewed by a 
+             multitude of devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- keywords make it so that the website can be found by search engines -->
+        <meta name="keywords" content="Tinker, Nexus, TinkerNexus, tinkernexus, 
+              tinker-nexus, Tinker-Nexus, Tinker Nexus, make, makers, build, collaborate, social, 
+              network, social netwoking, machine, machining, invent, invention, produce, production,
+              about, us, about us">
+        
+        <!-- create a link to the bootstrap css file -->
+        <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+        
+        <!-- link to normalize CSS -->
+        <link rel="stylesheet" href="../normalize.css">
+        
+        <!-- create a link to our personal css file -->
+        <link rel="stylesheet" href="../CSS/newcss.css">
+    </head>
+    
+    <body>
+        <div class="container-fluid">
+            <!-- row that contains logo that links to homepage -->
+            <div class="row container1">
+                <!-- Center the logo, make it responsive, create class="relative" to help position the login area -->
+                <a href="../index.html"><img class="img-responsive center-block"src="../CSS/images/NewLogo.png" width="95%" height="90%"alt="logo"></a>            
+            </div>
+            
+            <!-- create a row for the banner -->
+            <div class="row">
+                <!--Create a div to contain the banner -->
+                <div class="col-md-12">
+                    <!-- implement the image -->
+                    <img src="../CSS/images/bannertop.png" alt="Tinker Nexus" class="img-responsive center-block"/>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
