@@ -21,5 +21,8 @@
 	<classpathentry kind="var" path="M2_REPO/junit/junit/3.8.1/junit-3.8.1.jar" sourcepath="M2_REPO/junit/junit/3.8.1/junit-3.8.1-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/tucke_000/Documents/jogamp-all-platforms/jogamp-all-platforms/jar/gluegen.jar"/>
 	<classpathentry kind="lib" path="C:/Users/tucke_000/Documents/jogamp-all-platforms/jogamp-all-platforms/jar/jogl-all.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/PostgreSQL/pgJDBC/postgresql-9.4.1208.jar"/>
+	<classpathentry kind="lib" path="WebContent/lib/javax.persistence_2.1.0.v201304241213.jar"/>
+	<classpathentry kind="con" path="org.eclipse.datatools.connectivity.jdt.DRIVERLIBRARY/PostgreSQL JDBC Driver"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
