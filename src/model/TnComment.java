@@ -15,7 +15,9 @@ public class TnComment implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	private Integer commentid;
+	@SequenceGenerator(name="TNCOMMENTS_COMMENTID_GENERATOR", sequenceName="TNCOMMENTS_SEQ", allocationSize=1)
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="TNCOMMENTS_COMMENTID_GENERATOR")
+	private Long commentid;
 
 	private String commenttext;
 
@@ -32,11 +34,11 @@ public class TnComment implements Serializable {
 	public TnComment() {
 	}
 
-	public Integer getCommentid() {
+	public Long getCommentid() {
 		return this.commentid;
 	}
 
-	public void setCommentid(Integer commentid) {
+	public void setCommentid(Long commentid) {
 		this.commentid = commentid;
 	}
 

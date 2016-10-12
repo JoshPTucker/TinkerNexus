@@ -16,19 +16,24 @@ public class TnProject implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	private Integer projectid;
+	@SequenceGenerator(name="TNPROJECTS_PROJECTID_GENERATOR", sequenceName="TNPROJECTS_SEQ", allocationSize=1)
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="TNPROJECTS_PROJECTID_GENERATOR")
+	private Long projectid;
 
 	private Boolean collaboratorcheck;
 
 	private Boolean commentsenabled;
 
-	private Integer organizationid;
+	private Long organizationid;
 
 	private Boolean privatecheck;
 
 	private String projectname;
 
 	private Integer rating;
+
+	@Column(name="\"userid \"")
+	private Long userid_;
 
 	//bi-directional many-to-one association to TnCollaborator
 	@OneToMany(mappedBy="tnProject")
@@ -48,17 +53,18 @@ public class TnProject implements Serializable {
 
 	//bi-directional many-to-one association to TnUser
 	@ManyToOne
-	@JoinColumn(name="\"userid \"")
+	@JoinColumns({
+		})
 	private TnUser tnUser;
 
 	public TnProject() {
 	}
 
-	public Integer getProjectid() {
+	public Long getProjectid() {
 		return this.projectid;
 	}
 
-	public void setProjectid(Integer projectid) {
+	public void setProjectid(Long projectid) {
 		this.projectid = projectid;
 	}
 
@@ -78,11 +84,11 @@ public class TnProject implements Serializable {
 		this.commentsenabled = commentsenabled;
 	}
 
-	public Integer getOrganizationid() {
+	public Long getOrganizationid() {
 		return this.organizationid;
 	}
 
-	public void setOrganizationid(Integer organizationid) {
+	public void setOrganizationid(Long organizationid) {
 		this.organizationid = organizationid;
 	}
 
@@ -108,6 +114,14 @@ public class TnProject implements Serializable {
 
 	public void setRating(Integer rating) {
 		this.rating = rating;
+	}
+
+	public Long getUserid_() {
+		return this.userid_;
+	}
+
+	public void setUserid_(Long userid_) {
+		this.userid_ = userid_;
 	}
 
 	public List<TnCollaborator> getTnCollaborators() {

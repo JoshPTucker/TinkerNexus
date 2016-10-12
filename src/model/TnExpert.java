@@ -15,7 +15,9 @@ public class TnExpert implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	private Integer expertid;
+	@SequenceGenerator(name="TNEXPERTS_EXPERTID_GENERATOR", sequenceName="TNEXPERTS_SEQ", allocationSize=1)
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="TNEXPERTS_EXPERTID_GENERATOR")
+	private Long expertid;
 
 	private Integer charge;
 
@@ -33,11 +35,11 @@ public class TnExpert implements Serializable {
 	public TnExpert() {
 	}
 
-	public Integer getExpertid() {
+	public Long getExpertid() {
 		return this.expertid;
 	}
 
-	public void setExpertid(Integer expertid) {
+	public void setExpertid(Long expertid) {
 		this.expertid = expertid;
 	}
 

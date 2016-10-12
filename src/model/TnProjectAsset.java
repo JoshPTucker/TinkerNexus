@@ -16,7 +16,9 @@ public class TnProjectAsset implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	private Integer assetid;
+	@SequenceGenerator(name="TNPROJECTASSETS_ASSETID_GENERATOR", sequenceName="TNPROJECTASSETS_SEQ", allocationSize=1)
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="TNPROJECTASSETS_ASSETID_GENERATOR")
+	private Long assetid;
 
 	private String asset;
 
@@ -36,11 +38,11 @@ public class TnProjectAsset implements Serializable {
 	public TnProjectAsset() {
 	}
 
-	public Integer getAssetid() {
+	public Long getAssetid() {
 		return this.assetid;
 	}
 
-	public void setAssetid(Integer assetid) {
+	public void setAssetid(Long assetid) {
 		this.assetid = assetid;
 	}
 

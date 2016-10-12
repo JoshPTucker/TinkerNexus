@@ -15,7 +15,9 @@ public class TnSkill implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	private Integer skillid;
+	@SequenceGenerator(name="TNSKILLS_SKILLID_GENERATOR", sequenceName="TNSKILLS_SEQ", allocationSize=1)
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="TNSKILLS_SKILLID_GENERATOR")
+	private Long skillid;
 
 	private String skill;
 
@@ -27,11 +29,11 @@ public class TnSkill implements Serializable {
 	public TnSkill() {
 	}
 
-	public Integer getSkillid() {
+	public Long getSkillid() {
 		return this.skillid;
 	}
 
-	public void setSkillid(Integer skillid) {
+	public void setSkillid(Long skillid) {
 		this.skillid = skillid;
 	}
 

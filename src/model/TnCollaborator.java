@@ -15,7 +15,9 @@ public class TnCollaborator implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	private Integer collaboratorid;
+	@SequenceGenerator(name="TNCOLLABORATORS_COLLABORATORID_GENERATOR", sequenceName="TNCOLLABORATORS_SEQ", allocationSize=1)
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="TNCOLLABORATORS_COLLABORATORID_GENERATOR")
+	private Long collaboratorid;
 
 	private Boolean candownload;
 
@@ -34,11 +36,11 @@ public class TnCollaborator implements Serializable {
 	public TnCollaborator() {
 	}
 
-	public Integer getCollaboratorid() {
+	public Long getCollaboratorid() {
 		return this.collaboratorid;
 	}
 
-	public void setCollaboratorid(Integer collaboratorid) {
+	public void setCollaboratorid(Long collaboratorid) {
 		this.collaboratorid = collaboratorid;
 	}
 

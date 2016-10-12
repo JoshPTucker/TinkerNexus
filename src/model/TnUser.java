@@ -16,7 +16,9 @@ public class TnUser implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	private Integer userid;
+	@SequenceGenerator(name="TNUSERS_USERID_GENERATOR", sequenceName="TNUSERS_SEQ", allocationSize=1)
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="TNUSERS_USERID_GENERATOR")
+	private Long userid;
 
 	private String address;
 
@@ -69,11 +71,11 @@ public class TnUser implements Serializable {
 	public TnUser() {
 	}
 
-	public Integer getUserid() {
+	public Long getUserid() {
 		return this.userid;
 	}
 
-	public void setUserid(Integer userid) {
+	public void setUserid(Long userid) {
 		this.userid = userid;
 	}
 

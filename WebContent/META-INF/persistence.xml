@@ -10,6 +10,7 @@
 		<class>model.TnProject</class>
 		<class>model.TnSkill</class>
 		<class>model.TnUser</class>
+		<exclude-unlisted-classes>false</exclude-unlisted-classes>
 		<properties>
 			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/TinkerNexus"/>
 			<property name="javax.persistence.jdbc.user" value="postgres"/>
