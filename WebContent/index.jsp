@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html class="html">
-    <head>
-        <title>TinkerNexus: The Social Network for Makers!</title>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+     <title>TinkerNexus: The Social Network for Makers!</title>
         <meta charset="UTF-8">
         
         <!-- the following tag makes it so that the site can be viewed by a 
@@ -31,10 +29,11 @@ and open the template in the editor.
         <!-- link the slider css file for the "About Us" (later "Featured Projects")
              slide show -->
         <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    </head>
+</head>
 
     
 <body>
+<jsp:include page="navbar.jsp"></jsp:include>
     <!-- Create a CSS bootstrap container class to help arrange the elements on the page -->
     <div class="container-fluid">
         <!-- row that contains login and logo -->
