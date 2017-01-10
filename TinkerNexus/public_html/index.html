@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html class="html">
+    <head>
+        <title>TinkerNexus: The Social Network for Makers!</title>
+        <meta charset="UTF-8">
+        
+        <!-- the following tag makes it so that the site can bu viewed by a 
+             multitude of devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- keywords make it so that the website can be found by search engines -->
+        <meta name="keywords" content="Tinker, Nexus, TinkerNexus, tinkernexus, 
+              tinker-nexus, Tinker-Nexus, Tinker Nexus, make, makers, build, collaborate, social, 
+              network, social netwoking, machine, machining, invent, invention, produce, production">
+        
+        <!-- create a link to the bootstrap css file -->
+        <link rel="stylesheet" href="CSS/bootstrap.min.css">
+        
+        <!-- create a link to our personal css file -->
+        <link rel="stylesheet" href="CSS/newcss.css">
+        
+        <!-- links for the login section css -->
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="style.css">
+        
+        <!-- link the slider css file for the "About Us" (later "Featured Projects")
+             slide show -->
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    </head>
+
+    
+<body>
+    <!-- Create a CSS bootstrap container class to help arrange the elements on the page -->
+    <div class="container-fluid">
+        <!-- row that contains login and logo -->
+        <div class="row container1">
+            <!-- Center the logo, make it responsive, create class="relative" to help position the login area -->
+            <img class="logo img-responsive" id="center" src="CSS/images/NewLogo.png" width="10%" height="7%"alt="logo">
+                <!-- Position the login area in spite of the margin space taken up by the logo using class="absolute" and placing
+                    the login div within the logo div. -->
+            <div class="loginsect">
+                <section class="loginform cf">
+                    <form name="login" action="index_submit" method="get" accept-charset="utf-8">
+			<ul>
+				<li>
+					<label for="usermail" style="color: white">Email</label>
+					<input type="email" name="usermail" placeholder="yourname@email.com" required>
+				</li>
+				<li>
+					<label for="password" style="color:white">Password</label>
+					<input type="password" name="password" placeholder="password" required></li>
+				<li>
+					<input type="submit" value="Login">
+				</li>
+			</ul>
+                    </form>
+                </section>
+
+            </div>       
+        </div>
+        
+        <!-- Create a row to place the TinkerNexus banner --> 
+        <div class="row">
+                <!--Create a div to contain the banner -->
+                <div class="col-md-12">
+                    <!-- implement the image -->
+                    <img src="CSS/images/bannertop.png" alt="Tinker Nexus" class="img-responsive center-block"/>
+                </div>
+        </div>
+        
+        <!-- Create a row for the slogan -->
+        <div class="row">
+            <!-- Create a div to contain the slogan -->
+            <div class="col-md-12">
+                <!-- implement the slogan -->
+                <h3 class="text-center slogan"><strong><u>The Social Networking Site For Makers!</u></strong></h3> 
+            </div>
+        </div>
+        
+        
+        <!-- Create a row for the "About Us" banner (later to be called "Featured Projects") -->
+        <div class="row">
+            <!-- Create a div to contain the banner -->
+            <div class="col-md-12">
+                <!-- Implement the banner -->
+                <img src="CSS/images/AboutUs.png" alt="About Us" class="img-responsive center-block"/>
+            </div>
+        </div>
+        
+        
+        <!-- Create a row to contain the "body" of the website -->
+        <div class="row" class="slide-container">
+            <!-- Implement a carousel that will contain all the fancy stuff -->
+            <div class="col-md-3"><img src="CSS/images/ProjectFrame.png" class="img-responsive" alt="project frame"/></div>
+            <div class="col-md-3"><img src="CSS/images/ProjectFrame.png" class="img-responsive" alt="project frame"/></div>
+            <div class="col-md-3"><img src="CSS/images/ProjectFrame.png" class="img-responsive" alt="project frame"/></div>
+            <div class="col-md-3"><img src="CSS/images/ProjectFrame.png" class="img-responsive" alt="project frame"/></div>
+            <div class="col-md-3"><img src="CSS/images/ProjectFrame.png" class="img-responsive" alt="project frame"/></div>
+            <div class="col-md-3"><img src="CSS/images/ProjectFrame.png" class="img-responsive" alt="project frame"/></div>
+        </div>
+        
+        
+        <footer class="row bottomrow">
+            <div class="col-md-1">
+                <a href="About_Us/about-us.html"><strong class="pagetext">About Us! :)</strong></a>
+            </div>
+            
+            <div class="col-md-1">
+                <a><strong class="pagetext">Start a Project</strong></a>
+            </div> 
+            
+            <div class="col-md-1">
+                <a href="Contact_Us/contact-us.html"><strong class="pagetext">Contact</strong></a>
+            </div>
+            
+            <div class="col-md-1">
+                <a href="Terms/terms.html"><strong class="pagetext">Terms</strong></a>
+            </div> 
+            
+            <div class="col-md-1">
+                <a><strong class="pagetext">Advertise</strong></a>
+            </div> 
+            
+            <div class="col-md-1">
+                <a><strong class="pagetext">Careers</strong</a>
+            </div> 
+            
+            <div class="col-md-1">
+                <a><strong>Help&nbsp;and&nbsp;FAQ</strong></a>
+            </div>       
+        </footer>
+        
+        <!-- Link to JQuery (necessary for bootstrap javascript) -->
+        <script src="jquery-3.1.1.min.js"></script>
+        <!-- Link to bootstrap javascript -->
+        <script src="bootstrap.min.js"></script>
+    </div>
+</body>
+       
+</html>

@@ -1,0 +1,107 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: transparent;
+}
+
+.html { 
+  background: url('../CSS/images/Metal-Grate.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+    background-color: transparent;
+}
+
+.row {
+    background-color: transparent;
+}
+
+.col-md-12 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.slogan{
+    font-size: 200%;
+    color: white;
+}
+
+.bgimg {
+    background-image: url('images/Banner-Bottom.png');
+}
+
+.fProjects {
+    
+}
+
+.relative {
+    margin: 0 auto;
+}
+
+.absolute {
+    position: absolute;
+    right: 0px;
+    top: 3%;
+    width: 30%;
+}
+
+.container1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.loginsect{
+    margin-left: auto;
+    margin-top: 4%;
+    margin-bottom: .5%;
+    background-image: url('images/loginbg.png');
+    height: 10%;
+    width: 30%;
+}
+
+.logo{
+margin-left: 44.5%;   
+}
+
+.slide-container {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.bottomrow{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: transparent;
+    background-image: url('images/Banner-Bottom.png');
+}
+
+footer div a{
+    display: block;
+    margin-top: 20%;
+    color: white;
+}
+
+
+
