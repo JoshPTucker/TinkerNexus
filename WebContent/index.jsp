@@ -33,7 +33,7 @@
 
     
 <body>
-<jsp:include page="navbar.jsp"></jsp:include>
+<!--<jsp:include page="navbar.jsp"></jsp:include> -->
     <!-- Create a CSS bootstrap container class to help arrange the elements on the page -->
     <div class="container-fluid">
         <!-- row that contains login and logo -->
