@@ -12,7 +12,7 @@ body {
 }
 
 .html { 
-  background: url('images/background.jpg') no-repeat center center fixed; 
+  background: url('../CSS/images/Metal-Grate.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -37,10 +37,6 @@ body {
     color: white;
 }
 
-.pagetext {
-    color: white;
-}
-
 .bgimg {
     background-image: url('images/Banner-Bottom.png');
 }
@@ -59,13 +55,6 @@ body {
     top: 3%;
     width: 30%;
 }
-
-.bottomrow{
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-}
-
 
 .container1{
     display: flex;
@@ -86,7 +75,7 @@ body {
 margin-left: 44.5%;   
 }
 
-#slide_container {
+.slide-container {
     display: flex;
     display: -webkit-box;
     display: -moz-box;
@@ -98,4 +87,21 @@ margin-left: 44.5%;
     justify-content: space-around;
     justify-content: space-between;
 }
+
+.bottomrow{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: transparent;
+    background-image: url('images/Banner-Bottom.png');
+}
+
+footer div a{
+    display: block;
+    margin-top: 20%;
+    color: white;
+}
+
+
 
