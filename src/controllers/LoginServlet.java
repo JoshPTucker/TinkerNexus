@@ -7,6 +7,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import util.UserUtil;
+import dao.USerDao;
+import Servlets.HttpSession;
+import Servlets.List;
+import Servlets.String;
+import customTools.emailUtil;
+import model.TnUser;
+
 /**
  * Servlet implementation class LoginServlet
  */
@@ -26,7 +34,7 @@ public class LoginServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		doPost(request, response);
 	}
 
 	/**
@@ -34,7 +42,66 @@ public class LoginServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+		String useremail = request.getParameter("email");
+        String userpassword = request.getParameter("password");       
+        String action = request.getParameter("action");     
+        String nextURL = "";       
+        HttpSession session = request.getSession();          
+        TnUser user = null;        
+        
+        System.out.println("LoginServlet action: "+action);
+        if (action.equals("logout")){
+        	System.out.println("Login Servlet: Logout");
+            session.invalidate();
+            nextURL = "/login.jsp";
+            
+        }else{        	
+        	
+        	if (action.equals("createaccount")) {
+        		//create an account for a new user
+        		System.out.println("Login: creating an account for a new user");
+        		String username = request.getParameter("username");  
+        		user = ;        	
+        	
+        	} else {        
+        		//validate the user for login
+        		System.out.println("Login: validating a user");
+        		user = DBUser.getValidUser(useremail, userpassword);
+        	}
+        	
+            if (user != null){            	
+            	
+            	System.out.println("found valid user"+useremail+" "+userpassword);
+                session.setAttribute("user", user); 
+                session.setAttribute("username", String.valueOf(user.getUsername()));
+                
+                
+                nextURL = "/";
+            }else{
+                nextURL = "/login.jsp";
+                String att = (String)session.getAttribute("loginattempts");
+                if(att!=null){
+                	int atts = Integer.parseInt(att);
+                	if(atts>=2){
+                		String to = "admin@samazon.com";
+                		String from = "donotreply@samazon.com";
+                		String subject = "User failed attempts";
+                		String body = "Login in for user: "+ useremail +" failed repeatedly";
+                		emailUtil.sendEmail(to, from, subject, body);
+                	}
+                	else{
+                		atts++;
+                    	session.setAttribute("loginattempts", ""+atts);
+                	}
+                }
+                else{
+                	session.setAttribute("loginattempts", "1");
+                }
+            }
+            
+        }
+        //redirect to the next page    
+        response.sendRedirect(request.getContextPath() + nextURL);
 	}
 
 }
