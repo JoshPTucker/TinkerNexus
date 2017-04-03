@@ -16,7 +16,7 @@ public class TnProject implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@SequenceGenerator(name="TNPROJECTS_PROJECTID_GENERATOR", sequenceName="TNPROJECTS_SEQ", allocationSize=1)
+	@SequenceGenerator(name="TNPROJECTS_PROJECTID_GENERATOR", sequenceName="TNPROJECTS_SEQ")
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="TNPROJECTS_PROJECTID_GENERATOR")
 	private Long projectid;
 

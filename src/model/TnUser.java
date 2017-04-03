@@ -26,7 +26,11 @@ public class TnUser implements Serializable {
 
 	private String facebook;
 
+	private String firstname;
+
 	private String gravatarurl;
+
+	private String lastname;
 
 	private String linkedin;
 
@@ -103,12 +107,28 @@ public class TnUser implements Serializable {
 		this.facebook = facebook;
 	}
 
+	public String getFirstname() {
+		return this.firstname;
+	}
+
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
+	}
+
 	public String getGravatarurl() {
 		return this.gravatarurl;
 	}
 
 	public void setGravatarurl(String gravatarurl) {
 		this.gravatarurl = gravatarurl;
+	}
+
+	public String getLastname() {
+		return this.lastname;
+	}
+
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
 	}
 
 	public String getLinkedin() {

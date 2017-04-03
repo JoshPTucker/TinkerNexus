@@ -15,7 +15,7 @@ public class TnFollower implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@SequenceGenerator(name="TNFOLLOWERS_FOLLOWERID_GENERATOR", sequenceName="TNFOLLOWERS_SEQ", allocationSize=1)
+	@SequenceGenerator(name="TNFOLLOWERS_FOLLOWERID_GENERATOR", sequenceName="TNFOLLOWERS_SEQ")
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="TNFOLLOWERS_FOLLOWERID_GENERATOR")
 	private Integer followerid;
 

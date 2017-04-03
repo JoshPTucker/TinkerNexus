@@ -4,7 +4,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
 import javax.persistence.TypedQuery;
 import model.TnSkill;
-import util.DButil;
+import util.DBUtil;;
 public class SkillDao {
 	public static void insertSkill(TnSkill skill) {
 		EntityManager em = DBUtil.getEmfFactory().createEntityManager();
@@ -22,7 +22,7 @@ public class SkillDao {
 		
 	}
 	public static void updateSkill(TnSkill s) {
-        EntityManager em = DBUtil.getEmFactory().createEntityManager();
+        EntityManager em = DBUtil.getEmfFactory().createEntityManager();
         EntityTransaction trans = em.getTransaction();
         try {
             trans.begin();
@@ -38,7 +38,7 @@ public class SkillDao {
 		if(s == null){
 			return ;
 		}
-        EntityManager em = DBUtil.getEmFactory().createEntityManager();
+        EntityManager em = DBUtil.getEmfFactory().createEntityManager();
         EntityTransaction trans = em.getTransaction();
         try {
             trans.begin();

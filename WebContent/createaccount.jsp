@@ -39,7 +39,7 @@
 <body>
 	<h4>Create Account</h4>
 
-	<form onsubmit="return validateLogin()" action="Login" method="post">		
+	<form action="CreateAccount" method="post">		
 		<p>Enter your user name</p>
 		<input type="text" name="username" id="username" value=""></input> 
 			<p>Enter your first name</p>
@@ -51,7 +51,7 @@
 			<p>Enter your zipcode</p>
 		<input type="text" name="zipcode" id="zipcode" value=""></input> 
 		<p>Enter your email</p>
-		<input type="text" name="email" id="email" value=""></input> 
+		<input type="text" name="useremail" id="useremail" value=""></input> 
 		<p>Enter your password</p>
 		<input type="password" name="password" id="password" value=""></input>
 		<input type="hidden" name="action" id="action" value="createaccount"></input>

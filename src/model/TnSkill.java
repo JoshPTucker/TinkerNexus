@@ -15,7 +15,7 @@ public class TnSkill implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@SequenceGenerator(name="TNSKILLS_SKILLID_GENERATOR", sequenceName="TNSKILLS_SEQ", allocationSize=1)
+	@SequenceGenerator(name="TNSKILLS_SKILLID_GENERATOR", sequenceName="TNSKILLS_SEQ")
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="TNSKILLS_SKILLID_GENERATOR")
 	private Long skillid;
 

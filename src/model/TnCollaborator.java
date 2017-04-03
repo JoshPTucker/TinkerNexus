@@ -15,7 +15,7 @@ public class TnCollaborator implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@SequenceGenerator(name="TNCOLLABORATORS_COLLABORATORID_GENERATOR", sequenceName="TNCOLLABORATORS_SEQ", allocationSize=1)
+	@SequenceGenerator(name="TNCOLLABORATORS_COLLABORATORID_GENERATOR", sequenceName="TNCOLLABORATORS_SEQ")
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="TNCOLLABORATORS_COLLABORATORID_GENERATOR")
 	private Long collaboratorid;
 

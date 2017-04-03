@@ -4,6 +4,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
 import javax.persistence.TypedQuery;
 import model.TnProject;
+import util.DBUtil;
 public class ProjectDao {
 	public static void insertProject(TnProject project) {
 		EntityManager em = DBUtil.getEmfFactory().createEntityManager();
@@ -21,7 +22,7 @@ public class ProjectDao {
 		
 	}
 	public static void updateProject(TnProject p) {
-        EntityManager em = DBUtil.getEmFactory().createEntityManager();
+        EntityManager em = DBUtil.getEmfFactory().createEntityManager();
         EntityTransaction trans = em.getTransaction();
         try {
             trans.begin();
@@ -37,7 +38,7 @@ public class ProjectDao {
 		if(p == null){
 			return ;
 		}
-        EntityManager em = DBUtil.getEmFactory().createEntityManager();
+        EntityManager em = DBUtil.getEmfFactory().createEntityManager();
         EntityTransaction trans = em.getTransaction();
         try {
             trans.begin();

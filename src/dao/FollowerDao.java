@@ -4,7 +4,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
 import javax.persistence.TypedQuery;
 import model.TnFollower;
-import util.DButil;
+import util.DBUtil;
 public class FollowerDao {
 	public static void insertFollower(TnFollower follower) {
 		EntityManager em = DBUtil.getEmfFactory().createEntityManager();
@@ -22,7 +22,7 @@ public class FollowerDao {
 		
 	}
 	public static void updateFollower(TnFollower f) {
-        EntityManager em = DBUtil.getEmFactory().createEntityManager();
+        EntityManager em = DBUtil.getEmfFactory().createEntityManager();
         EntityTransaction trans = em.getTransaction();
         try {
             trans.begin();
@@ -38,7 +38,7 @@ public class FollowerDao {
 		if(f == null){
 			return ;
 		}
-        EntityManager em = DBUtil.getEmFactory().createEntityManager();
+        EntityManager em = DBUtil.getEmfFactory().createEntityManager();
         EntityTransaction trans = em.getTransaction();
         try {
             trans.begin();
@@ -57,7 +57,7 @@ public class FollowerDao {
         
         try{
             TypedQuery<TnFollower> query = em.createQuery(qString,TnFollower.class);
-            query.setParameter("id", collabid);
+            query.setParameter("id", followerid);
             follower = query.getSingleResult();
         }catch (Exception e){
            return null;

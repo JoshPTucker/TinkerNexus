@@ -4,7 +4,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
 import javax.persistence.TypedQuery;
 import model.TnExpert;
-import util.DButil;
+import util.DBUtil;
 public class ExpertDao {
 	public static void insertExpert(TnExpert expert) {
 		EntityManager em = DBUtil.getEmfFactory().createEntityManager();
@@ -22,7 +22,7 @@ public class ExpertDao {
 		
 	}
 	public static void updateExpert(TnExpert ex) {
-        EntityManager em = DBUtil.getEmFactory().createEntityManager();
+        EntityManager em = DBUtil.getEmfFactory().createEntityManager();
         EntityTransaction trans = em.getTransaction();
         try {
             trans.begin();
@@ -38,7 +38,7 @@ public class ExpertDao {
 		if(ex == null){
 			return ;
 		}
-        EntityManager em = DBUtil.getEmFactory().createEntityManager();
+        EntityManager em = DBUtil.getEmfFactory().createEntityManager();
         EntityTransaction trans = em.getTransaction();
         try {
             trans.begin();

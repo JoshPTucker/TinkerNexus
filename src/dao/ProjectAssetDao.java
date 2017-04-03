@@ -4,7 +4,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
 import javax.persistence.TypedQuery;
 import model.TnProjectAsset;
-import util.DButil;
+import util.DBUtil;;
 public class ProjectAssetDao {
 	public static void insertProjectAsset(TnProjectAsset asset) {
 		EntityManager em = DBUtil.getEmfFactory().createEntityManager();
@@ -22,7 +22,7 @@ public class ProjectAssetDao {
 		
 	}
 	public static void updateProjectAsset(TnProjectAsset a) {
-        EntityManager em = DBUtil.getEmFactory().createEntityManager();
+        EntityManager em = DBUtil.getEmfFactory().createEntityManager();
         EntityTransaction trans = em.getTransaction();
         try {
             trans.begin();
@@ -38,7 +38,7 @@ public class ProjectAssetDao {
 		if(a == null){
 			return ;
 		}
-        EntityManager em = DBUtil.getEmFactory().createEntityManager();
+        EntityManager em = DBUtil.getEmfFactory().createEntityManager();
         EntityTransaction trans = em.getTransaction();
         try {
             trans.begin();
@@ -50,7 +50,7 @@ public class ProjectAssetDao {
             em.close();
         }
     }
-	public static TnProjectAsset getProjectAssetById(long projectid) {
+	public static TnProjectAsset getProjectAssetById(long projectassetid) {
 		EntityManager em = DBUtil.getEmfFactory().createEntityManager();
         TnProjectAsset asset = null;
         String qString = "select b from TnProjectAssets b where b.projectassetid = :id";

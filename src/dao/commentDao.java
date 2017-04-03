@@ -3,7 +3,7 @@ package dao;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
 import javax.persistence.TypedQuery;
-import util.DButil;
+import util.DBUtil;
 import model.TnComment;
 public class commentDao {
 	public static void insertComment(TnComment comment) {
@@ -22,7 +22,7 @@ public class commentDao {
 		
 	}
 	public static void updateComment(TnComment c) {
-        EntityManager em = DBUtil.getEmFactory().createEntityManager();
+        EntityManager em = DBUtil.getEmfFactory().createEntityManager();
         EntityTransaction trans = em.getTransaction();
         try {
             trans.begin();
@@ -38,7 +38,7 @@ public class commentDao {
 		if(c == null){
 			return ;
 		}
-        EntityManager em = DBUtil.getEmFactory().createEntityManager();
+        EntityManager em = DBUtil.getEmfFactory().createEntityManager();
         EntityTransaction trans = em.getTransaction();
         try {
             trans.begin();
@@ -56,9 +56,9 @@ public class commentDao {
         String qString = "select b from TnComment b where b.commentid = :id";
         
         try{
-            TypedQuery<TnComment> query = em.createQuery(qString,TnCollaborator.class);
+            TypedQuery<TnComment> query = em.createQuery(qString,TnComment.class);
             query.setParameter("id", commentid);
-            collaborator = query.getSingleResult();
+            comment = query.getSingleResult();
         }catch (Exception e){
            return null;
         }

@@ -16,7 +16,7 @@ public class TnProjectAsset implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@SequenceGenerator(name="TNPROJECTASSETS_ASSETID_GENERATOR", sequenceName="TNPROJECTASSETS_SEQ", allocationSize=1)
+	@SequenceGenerator(name="TNPROJECTASSETS_ASSETID_GENERATOR", sequenceName="TNPROJECTASSETS_SEQ")
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="TNPROJECTASSETS_ASSETID_GENERATOR")
 	private Long assetid;
 

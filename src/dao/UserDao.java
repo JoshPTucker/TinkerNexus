@@ -3,7 +3,7 @@ package dao;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
 import javax.persistence.TypedQuery;
-import util.DButil;
+import util.DBUtil;
 import model.TnUser;
 public class UserDao {
 	public static void insertUser(TnUser user) {
@@ -22,7 +22,7 @@ public class UserDao {
 		
 	}
 	public static void updateUser(TnUser u) {
-        EntityManager em = DBUtil.getEmFactory().createEntityManager();
+        EntityManager em = DBUtil.getEmfFactory().createEntityManager();
         EntityTransaction trans = em.getTransaction();
         try {
             trans.begin();
@@ -35,10 +35,10 @@ public class UserDao {
         }
     }
 	public static void removeUser(TnUser u) {
-		if(p == null){
+		if(u == null){
 			return ;
 		}
-        EntityManager em = DBUtil.getEmFactory().createEntityManager();
+        EntityManager em = DBUtil.getEmfFactory().createEntityManager();
         EntityTransaction trans = em.getTransaction();
         try {
             trans.begin();

@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import util.UserUtil;
-import dao.USerDao;
+import dao.UserDao;
 import Servlets.HttpSession;
 import Servlets.List;
 import Servlets.String;

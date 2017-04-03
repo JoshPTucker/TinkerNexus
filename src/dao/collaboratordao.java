@@ -2,7 +2,7 @@ package dao;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
 import javax.persistence.TypedQuery;
-import util.DButil;
+import util.DBUtil;
 import model.TnCollaborator;
 
 public class collaboratordao {
@@ -22,7 +22,7 @@ public class collaboratordao {
 		
 	}
 	public static void updateCollaborator(TnCollaborator c) {
-        EntityManager em = DBUtil.getEmFactory().createEntityManager();
+        EntityManager em = DBUtil.getEmfFactory().createEntityManager();
         EntityTransaction trans = em.getTransaction();
         try {
             trans.begin();
@@ -38,7 +38,7 @@ public class collaboratordao {
 		if(c == null){
 			return ;
 		}
-        EntityManager em = DBUtil.getEmFactory().createEntityManager();
+        EntityManager em = DBUtil.getEmfFactory().createEntityManager();
         EntityTransaction trans = em.getTransaction();
         try {
             trans.begin();

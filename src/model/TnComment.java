@@ -15,7 +15,7 @@ public class TnComment implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@SequenceGenerator(name="TNCOMMENTS_COMMENTID_GENERATOR", sequenceName="TNCOMMENTS_SEQ", allocationSize=1)
+	@SequenceGenerator(name="TNCOMMENTS_COMMENTID_GENERATOR", sequenceName="TNCOMMENTS_SEQ")
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="TNCOMMENTS_COMMENTID_GENERATOR")
 	private Long commentid;
 
