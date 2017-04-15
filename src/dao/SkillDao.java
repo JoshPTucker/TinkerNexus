@@ -58,7 +58,7 @@ public class SkillDao {
         try{
             TypedQuery<TnSkill> query = em.createQuery(qString,TnSkill.class);
             query.setParameter("id", skillid);
-            project = query.getSingleResult();
+            skill = query.getSingleResult();
         }catch (Exception e){
            return null;
         }

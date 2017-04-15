@@ -1,7 +1,8 @@
-package servlet;
+package services;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
+import javax.servlet.ServletOutputStream;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -31,7 +32,7 @@ public class HelloServlet extends HttpServlet {
     @Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-	    ServletOutputStream out = resp.getOutputStream();
+	    ServletOutputStream out = response.getOutputStream();
         out.write("hello heroku".getBytes());
         out.flush();
         out.close();

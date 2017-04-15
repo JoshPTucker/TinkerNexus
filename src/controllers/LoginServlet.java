@@ -6,13 +6,11 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import util.UserUtil;
 import dao.UserDao;
-import Servlets.HttpSession;
-import Servlets.List;
-import Servlets.String;
-import customTools.emailUtil;
+import util.Email;
 import model.TnUser;
 
 /**
@@ -66,7 +64,7 @@ public class LoginServlet extends HttpServlet {
         	} else {        
         		//validate the user for login
         		System.out.println("Login: validating a user");
-        		user = DBUser.getValidUser(useremail, userpassword);
+        		user = UserUtil.getValidUser(useremail, userpassword);
         	}
         	
             if (user != null){            	
@@ -87,7 +85,7 @@ public class LoginServlet extends HttpServlet {
                 		String from = "donotreply@samazon.com";
                 		String subject = "User failed attempts";
                 		String body = "Login in for user: "+ useremail +" failed repeatedly";
-                		emailUtil.sendEmail(to, from, subject, body);
+                		Email.sendEmail(to, from, subject, body, true);
                 	}
                 	else{
                 		atts++;
