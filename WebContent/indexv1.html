@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html class="html">
+    <head>
+        <title>TinkerNexus: The Social Network for Makers!</title>
+        <meta charset="UTF-8">
+        
+        <!-- the following tag makes it so that the site can but viewed by a 
+             multitude of devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- keywords make it so that the website can be found by search engines -->
+        <meta name="keywords" content="Tinker, Nexus, TinkerNexus, tinkernexus, 
+              tinker-nexus, Tinker-Nexus, Tinker Nexus, make, makers, build, collaborate, social, 
+              network, social netwoking, machine, machining, invent, invention, produce, production">
+        
+        <!-- create a link to the bootstrap css file -->
+        <link rel="stylesheet" href="CSS/bootstrap.min.css">
+        
+        <!-- create a link to our personal css file -->
+        <link rel="stylesheet" href="CSS/newcss.css">
+        
+        <!-- links for the login section css -->
+        <link rel="stylesheet" href="CSS/normalize.css">
+        <link rel="stylesheet" href="CSS/style.css">
+        
+        <!-- Link to JQuery (necessary for bootstrap javascript) -->
+        <!-- Link to bootstrap javascript -->
+        <script src="bootstrap.min.js"></script>
+        
+
+    </head>
+
+    
+<body>
+            <!-- Link to the slider javaScript -->
+        <script src="JavaScript/jquery-1.11.3.min.js" type="text/javascript" data-library="jquery" data-version="1.11.3"></script>
+        <script src="JavaScritpt/jssor.slider-22.0.15.mini.js" type="text/javascript" data-library="jssor.slider.mini" data-version="22.0.15"></script>
+        <script src="JavaScript/fancystuff.js" type="text/javascript"></script>
+    <!-- Create a CSS bootstrap container class to help arrange the elements on the page -->
+    <div class="container-fluid">
+        <!-- row that contains login and logo -->
+        <div class="row container1">
+            <!-- Center the logo, make it responsive, create class="relative" to help position the login area -->
+            <img class="logo img-responsive" id="center" src="CSS/images/NewLogo.png" width="10%" height="7%"alt="logo">
+                <!-- Position the login area in spite of the margin space taken up by the logo using class="absolute" and placing
+                    the login div within the logo div. -->
+            <div class="loginsect">
+                <section class="loginform cf">
+                    <form name="login" action="index_submit" method="get" accept-charset="utf-8">
+			<ul>
+				<li>
+					<label for="usermail" style="color: white">Email</label>
+					<input type="email" name="usermail" placeholder="yourname@email.com" required>
+				</li>
+				<li>
+					<label for="password" style="color:white">Password</label>
+					<input type="password" name="password" placeholder="password" required></li>
+				<li>
+					<input type="submit" value="Login">
+				</li>
+                                
+                                <li>
+                                    <a style="display: block">New User? Sign up here!</a>
+                                </li>
+			</ul>
+                    </form>
+                </section>
+
+            </div>       
+        </div>
+        
+        <!-- Create a row to place the TinkerNexus banner --> 
+        <div class="row">
+                <!--Create a div to contain the banner -->
+                <div class="col-md-12">
+                    <!-- implement the image -->
+                    <img src="CSS/images/bannertop.png" alt="Tinker Nexus" class="img-responsive center-block"/>
+                </div>
+        </div>
+        
+        <!-- Create a row for the slogan -->
+        <div class="row">
+            <!-- Create a div to contain the slogan -->
+            <div class="col-md-12">
+                <!-- implement the slogan -->
+                <h3 class="text-center slogan"><strong><u>The Social Networking Site For Makers!</u></strong></h3> 
+            </div>
+        </div>
+        
+        
+        <!-- Create a row for the "Featured Projects" banner -->
+        <div class="row">
+            <!-- Create a div to contain the banner -->
+            <div class="col-md-12">
+                <!-- Implement the banner -->
+                <img src="CSS/images/AboutUs.png" alt="About Us" class="img-responsive center-block"/>
+            </div>
+        </div>
+        
+        
+        <!-- Create a row to contain the "body" of the website -->
+
+<!-- #region Jssor Slider Begin -->
+<!-- Generator: Jssor Slider Maker -->
+<!-- This is deep minimized code which works independently. -->
+<script type="text/javascript">
+(function(k,f,c,i,d,l,j){/*! Jssor */
+new(function(){});var e={md:function(a){return-c.cos(a*c.PI)/2+.5},Yd:function(a){return a},Sd:function(a){return-a*(a-2)}};var b=new function(){var g=this,Ab=/\S+/g,F=1,yb=2,fb=3,eb=4,jb=5,G,r=0,h=0,s=0,X=0,z=0,I=navigator,ob=I.appName,o=I.userAgent,p=parseFloat;function Ib(){if(!G){G={ke:"ontouchstart"in k||"createTouch"in f};var a;if(I.pointerEnabled||(a=I.msPointerEnabled))G.ld=a?"msTouchAction":"touchAction"}return G}function v(i){if(!r){r=-1;if(ob=="Microsoft Internet Explorer"&&!!k.attachEvent&&!!k.ActiveXObject){var e=o.indexOf("MSIE");r=F;s=p(o.substring(e+5,o.indexOf(";",e)));/*@cc_on X=@_jscript_version@*/;h=f.documentMode||s}else if(ob=="Netscape"&&!!k.addEventListener){var d=o.indexOf("Firefox"),b=o.indexOf("Safari"),g=o.indexOf("Chrome"),c=o.indexOf("AppleWebKit");if(d>=0){r=yb;h=p(o.substring(d+8))}else if(b>=0){var j=o.substring(0,b).lastIndexOf("/");r=g>=0?eb:fb;h=p(o.substring(j+1,b))}else{var a=/Trident\/.*rv:([0-9]{1,}[\.0-9]{0,})/i.exec(o);if(a){r=F;h=s=p(a[1])}}if(c>=0)z=p(o.substring(c+12))}else{var a=/(opera)(?:.*version|)[ \/]([\w.]+)/i.exec(o);if(a){r=jb;h=p(a[2])}}}return i==r}function q(){return v(F)}function Q(){return q()&&(h<6||f.compatMode=="BackCompat")}function db(){return v(fb)}function ib(){return v(jb)}function vb(){return db()&&z>534&&z<535}function J(){v();return z>537||h>42||r==F&&h>=11}function O(){return q()&&h<9}function wb(a){var b,c;return function(f){if(!b){b=d;var e=a.substr(0,1).toUpperCase()+a.substr(1);n([a].concat(["WebKit","ms","Moz","O","webkit"]),function(g,d){var b=a;if(d)b=g+e;if(f.style[b]!=j)return c=b})}return c}}function ub(b){var a;return function(c){a=a||wb(b)(c)||b;return a}}var K=ub("transform");function nb(a){return{}.toString.call(a)}var kb={};n(["Boolean","Number","String","Function","Array","Date","RegExp","Object"],function(a){kb["[object "+a+"]"]=a.toLowerCase()});function n(b,d){var a,c;if(nb(b)=="[object Array]"){for(a=0;a<b.length;a++)if(c=d(b[a],a,b))return c}else for(a in b)if(c=d(b[a],a,b))return c}function C(a){return a==i?String(a):kb[nb(a)]||"object"}function lb(a){for(var b in a)return d}function A(a){try{return C(a)=="object"&&!a.nodeType&&a!=a.window&&(!a.constructor||{}.hasOwnProperty.call(a.constructor.prototype,"isPrototypeOf"))}catch(b){}}function u(a,b){return{x:a,y:b}}function rb(b,a){setTimeout(b,a||0)}function H(b,d,c){var a=!b||b=="inherit"?"":b;n(d,function(c){var b=c.exec(a);if(b){var d=a.substr(0,b.index),e=a.substr(b.index+b[0].length+1,a.length-1);a=d+e}});a=c+(!a.indexOf(" ")?"":" ")+a;return a}function tb(b,a){if(h<9)b.style.filter=a}g.ie=Ib;g.id=q;g.Ge=db;g.Ce=J;wb("transform");g.Oc=function(){return h};g.tc=rb;function Y(a){a.constructor===Y.caller&&a.sc&&a.sc.apply(a,Y.caller.arguments)}g.sc=Y;g.sb=function(a){if(g.Ie(a))a=f.getElementById(a);return a};function t(a){return a||k.event}g.qc=t;g.Nb=function(b){b=t(b);var a=b.target||b.srcElement||f;if(a.nodeType==3)a=g.rc(a);return a};g.vc=function(a){a=t(a);return{x:a.pageX||a.clientX||0,y:a.pageY||a.clientY||0}};function D(c,d,a){if(a!==j)c.style[d]=a==j?"":a;else{var b=c.currentStyle||c.style;a=b[d];if(a==""&&k.getComputedStyle){b=c.ownerDocument.defaultView.getComputedStyle(c,i);b&&(a=b.getPropertyValue(d)||b[d])}return a}}function ab(b,c,a,d){if(a!==j){if(a==i)a="";else d&&(a+="px");D(b,c,a)}else return p(D(b,c))}function m(c,a){var d=a?ab:D,b;if(a&4)b=ub(c);return function(e,f){return d(e,b?b(e):c,f,a&2)}}function Db(b){if(q()&&s<9){var a=/opacity=([^)]*)/.exec(b.style.filter||"");return a?p(a[1])/100:1}else return p(b.style.opacity||"1")}function Fb(b,a,f){if(q()&&s<9){var h=b.style.filter||"",i=new RegExp(/[\s]*alpha\([^\)]*\)/g),e=c.round(100*a),d="";if(e<100||f)d="alpha(opacity="+e+") ";var g=H(h,[i],d);tb(b,g)}else b.style.opacity=a==1?"":c.round(a*100)/100}var L={W:["rotate"],I:["rotateX"],K:["rotateY"],Ab:["skewX"],ub:["skewY"]};if(!J())L=B(L,{q:["scaleX",2],m:["scaleY",2],C:["translateZ",1]});function M(d,a){var c="";if(a){if(q()&&h&&h<10){delete a.I;delete a.K;delete a.C}b.e(a,function(d,b){var a=L[b];if(a){var e=a[1]||0;if(N[b]!=d)c+=" "+a[0]+"("+d+(["deg","px",""])[e]+")"}});if(J()){if(a.T||a.ab||a.C!=j)c+=" translate3d("+(a.T||0)+"px,"+(a.ab||0)+"px,"+(a.C||0)+"px)";if(a.q==j)a.q=1;if(a.m==j)a.m=1;if(a.q!=1||a.m!=1)c+=" scale3d("+a.q+", "+a.m+", 1)"}}d.style[K(d)]=c}g.Pc=m("transformOrigin",4);g.oe=m("backfaceVisibility",4);g.me=m("transformStyle",4);g.le=m("perspective",6);g.Qe=m("perspectiveOrigin",4);g.Me=function(a,b){if(q()&&s<9||s<10&&Q())a.style.zoom=b==1?"":b;else{var c=K(a),f="scale("+b+")",e=a.style[c],g=new RegExp(/[\s]*scale\(.*?\)/g),d=H(e,[g],f);a.style[c]=d}};g.Qb=function(b,a){return function(c){c=t(c);var e=c.type,d=c.relatedTarget||(e=="mouseout"?c.toElement:c.fromElement);(!d||d!==a&&!g.He(a,d))&&b(c)}};g.a=function(a,d,b,c){a=g.sb(a);if(a.addEventListener){d=="mousewheel"&&a.addEventListener("DOMMouseScroll",b,c);a.addEventListener(d,b,c)}else if(a.attachEvent){a.attachEvent("on"+d,b);c&&a.setCapture&&a.setCapture()}};g.F=function(a,c,d,b){a=g.sb(a);if(a.removeEventListener){c=="mousewheel"&&a.removeEventListener("DOMMouseScroll",d,b);a.removeEventListener(c,d,b)}else if(a.detachEvent){a.detachEvent("on"+c,d);b&&a.releaseCapture&&a.releaseCapture()}};g.Fb=function(a){a=t(a);a.preventDefault&&a.preventDefault();a.cancel=d;a.returnValue=l};g.Ne=function(a){a=t(a);a.stopPropagation&&a.stopPropagation();a.cancelBubble=d};g.E=function(d,c){var a=[].slice.call(arguments,2),b=function(){var b=a.concat([].slice.call(arguments,0));return c.apply(d,b)};return b};g.Ke=function(a,b){if(b==j)return a.textContent||a.innerText;var c=f.createTextNode(b);g.Tb(a);a.appendChild(c)};g.xb=function(d,c){for(var b=[],a=d.firstChild;a;a=a.nextSibling)(c||a.nodeType==1)&&b.push(a);return b};function mb(a,c,e,b){b=b||"u";for(a=a?a.firstChild:i;a;a=a.nextSibling)if(a.nodeType==1){if(U(a,b)==c)return a;if(!e){var d=mb(a,c,e,b);if(d)return d}}}g.u=mb;function S(a,d,f,b){b=b||"u";var c=[];for(a=a?a.firstChild:i;a;a=a.nextSibling)if(a.nodeType==1){U(a,b)==d&&c.push(a);if(!f){var e=S(a,d,f,b);if(e.length)c=c.concat(e)}}return c}function gb(a,c,d){for(a=a?a.firstChild:i;a;a=a.nextSibling)if(a.nodeType==1){if(a.tagName==c)return a;if(!d){var b=gb(a,c,d);if(b)return b}}}g.Ae=gb;g.ze=function(b,a){return b.getElementsByTagName(a)};function B(){var e=arguments,d,c,b,a,g=1&e[0],f=1+g;d=e[f-1]||{};for(;f<e.length;f++)if(c=e[f])for(b in c){a=c[b];if(a!==j){a=c[b];var h=d[b];d[b]=g&&(A(h)||A(a))?B(g,{},h,a):a}}return d}g.V=B;function Z(f,g){var d={},c,a,b;for(c in f){a=f[c];b=g[c];if(a!==b){var e;if(A(a)&&A(b)){a=Z(a,b);e=!lb(a)}!e&&(d[c]=a)}}return d}g.Nc=function(a){return C(a)=="function"};g.Ie=function(a){return C(a)=="string"};g.Oe=function(a){return!isNaN(p(a))&&isFinite(a)};g.e=n;function R(a){return f.createElement(a)}g.Lb=function(){return R("DIV")};g.Je=function(){return R("SPAN")};g.xc=function(){};function V(b,c,a){if(a==j)return b.getAttribute(c);b.setAttribute(c,a)}function U(a,b){return V(a,b)||V(a,"data-"+b)}g.p=V;g.g=U;function x(b,a){if(a==j)return b.className;b.className=a}g.Mc=x;function qb(b){var a={};n(b,function(b){if(b!=j)a[b]=b});return a}function sb(b,a){return b.match(a||Ab)}function P(b,a){return qb(sb(b||"",a))}g.fe=sb;function bb(b,c){var a="";n(c,function(c){a&&(a+=b);a+=c});return a}function E(a,c,b){x(a,bb(" ",B(Z(P(x(a)),P(c)),P(b))))}g.rc=function(a){return a.parentNode};g.G=function(a){g.P(a,"none")};g.Q=function(a,b){g.P(a,b?"none":"")};g.Bd=function(b,a){b.removeAttribute(a)};g.zd=function(){return q()&&h<10};g.yd=function(d,a){if(a)d.style.clip="rect("+c.round(a.k||a.o||0)+"px "+c.round(a.A)+"px "+c.round(a.z)+"px "+c.round(a.i||a.n||0)+"px)";else if(a!==j){var g=d.style.cssText,f=[new RegExp(/[\s]*clip: rect\(.*?\)[;]?/i),new RegExp(/[\s]*cliptop: .*?[;]?/i),new RegExp(/[\s]*clipright: .*?[;]?/i),new RegExp(/[\s]*clipbottom: .*?[;]?/i),new RegExp(/[\s]*clipleft: .*?[;]?/i)],e=H(g,f,"");b.zb(d,e)}};g.M=function(){return+new Date};g.S=function(b,a){b.appendChild(a)};g.Bb=function(b,a,c){(c||a.parentNode).insertBefore(b,a)};g.vb=function(b,a){a=a||b.parentNode;a&&a.removeChild(b)};g.od=function(a,b){n(a,function(a){g.vb(a,b)})};g.Tb=function(a){g.od(g.xb(a,d),a)};g.nd=function(a,b){var c=g.rc(a);b&1&&g.B(a,(g.j(c)-g.j(a))/2);b&2&&g.D(a,(g.l(c)-g.l(a))/2)};g.Dd=function(b,a){return parseInt(b,a||10)};g.Ed=p;g.He=function(b,a){var c=f.body;while(a&&b!==a&&c!==a)try{a=a.parentNode}catch(d){return l}return b===a};function W(d,c,b){var a=d.cloneNode(!c);!b&&g.Bd(a,"id");return a}g.db=W;g.kb=function(e,f){var a=new Image;function b(e,d){g.F(a,"load",b);g.F(a,"abort",c);g.F(a,"error",c);f&&f(a,d)}function c(a){b(a,d)}if(ib()&&h<11.6||!e)b(!e);else{g.a(a,"load",b);g.a(a,"abort",c);g.a(a,"error",c);a.src=e}};g.Td=function(d,a,e){var c=d.length+1;function b(b){c--;if(a&&b&&b.src==a.src)a=b;!c&&e&&e(a)}n(d,function(a){g.kb(a.src,b)});b()};g.Fd=function(a,g,i,h){if(h)a=W(a);var c=S(a,g);if(!c.length)c=b.ze(a,g);for(var f=c.length-1;f>-1;f--){var d=c[f],e=W(i);x(e,x(d));b.zb(e,d.style.cssText);b.Bb(e,d);b.vb(d)}return a};function Gb(a){var l=this,p="",r=["av","pv","ds","dn"],e=[],q,k=0,h=0,d=0;function i(){E(a,q,e[d||k||h&2||h]);b.L(a,"pointer-events",d?"none":"")}function c(){k=0;i();g.F(f,"mouseup",c);g.F(f,"touchend",c);g.F(f,"touchcancel",c)}function o(a){if(d)g.Fb(a);else{k=4;i();g.a(f,"mouseup",c);g.a(f,"touchend",c);g.a(f,"touchcancel",c)}}l.de=function(a){if(a===j)return h;h=a&2||a&1;i()};l.Gb=function(a){if(a===j)return!d;d=a?0:3;i()};l.eb=a=g.sb(a);var m=b.fe(x(a));if(m)p=m.shift();n(r,function(a){e.push(p+a)});q=bb(" ",e);e.unshift("");g.a(a,"mousedown",o);g.a(a,"touchstart",o)}g.ac=function(a){return new Gb(a)};g.L=D;g.Hb=m("overflow");g.D=m("top",2);g.B=m("left",2);g.j=m("width",2);g.l=m("height",2);g.Lc=m("marginLeft",2);g.wc=m("marginTop",2);g.v=m("position");g.P=m("display");g.s=m("zIndex",1);g.Xb=function(b,a,c){if(a!=j)Fb(b,a,c);else return Db(b)};g.zb=function(a,b){if(b!=j)a.style.cssText=b;else return a.style.cssText};var T={jb:g.Xb,k:g.D,i:g.B,Jb:g.j,Kb:g.l,ib:g.v,bf:g.P,nb:g.s};function w(f,l){var e=O(),b=J(),d=vb(),h=K(f);function k(b,d,a){var e=b.cb(u(-d/2,-a/2)),f=b.cb(u(d/2,-a/2)),g=b.cb(u(d/2,a/2)),h=b.cb(u(-d/2,a/2));b.cb(u(300,300));return u(c.min(e.x,f.x,g.x,h.x)+d/2,c.min(e.y,f.y,g.y,h.y)+a/2)}function a(d,a){a=a||{};var n=a.C||0,p=(a.I||0)%360,q=(a.K||0)%360,u=(a.W||0)%360,l=a.q,m=a.m,f=a.af;if(l==j)l=1;if(m==j)m=1;if(f==j)f=1;if(e){n=0;p=0;q=0;f=0}var c=new Cb(a.T,a.ab,n);c.I(p);c.K(q);c.Zd(u);c.Xd(a.Ab,a.ub);c.hc(l,m,f);if(b){c.lb(a.n,a.o);d.style[h]=c.Wd()}else if(!X||X<9){var o="",i={x:0,y:0};if(a.J)i=k(c,a.J,a.U);g.wc(d,i.y);g.Lc(d,i.x);o=c.Vd();var s=d.style.filter,t=new RegExp(/[\s]*progid:DXImageTransform\.Microsoft\.Matrix\([^\)]*\)/g),r=H(s,[t],o);tb(d,r)}}w=function(e,c){c=c||{};var h=c.n,k=c.o,f;n(T,function(a,b){f=c[b];f!==j&&a(e,f)});g.yd(e,c.c);if(!b){h!=j&&g.B(e,(c.Kc||0)+h);k!=j&&g.D(e,(c.Jc||0)+k)}if(c.Ud)if(d)rb(g.E(i,M,e,c));else a(e,c)};g.mb=M;if(d)g.mb=w;if(e)g.mb=a;else if(!b)a=M;g.H=w;w(f,l)}g.mb=w;g.H=w;function Cb(j,k,o){var d=this,b=[1,0,0,0,0,1,0,0,0,0,1,0,j||0,k||0,o||0,1],h=c.sin,g=c.cos,l=c.tan;function f(a){return a*c.PI/180}function n(a,b){return{x:a,y:b}}function m(c,e,l,m,o,r,t,u,w,z,A,C,E,b,f,k,a,g,i,n,p,q,s,v,x,y,B,D,F,d,h,j){return[c*a+e*p+l*x+m*F,c*g+e*q+l*y+m*d,c*i+e*s+l*B+m*h,c*n+e*v+l*D+m*j,o*a+r*p+t*x+u*F,o*g+r*q+t*y+u*d,o*i+r*s+t*B+u*h,o*n+r*v+t*D+u*j,w*a+z*p+A*x+C*F,w*g+z*q+A*y+C*d,w*i+z*s+A*B+C*h,w*n+z*v+A*D+C*j,E*a+b*p+f*x+k*F,E*g+b*q+f*y+k*d,E*i+b*s+f*B+k*h,E*n+b*v+f*D+k*j]}function e(c,a){return m.apply(i,(a||b).concat(c))}d.hc=function(a,c,d){if(a!=1||c!=1||d!=1)b=e([a,0,0,0,0,c,0,0,0,0,d,0,0,0,0,1])};d.lb=function(a,c,d){b[12]+=a||0;b[13]+=c||0;b[14]+=d||0};d.I=function(c){if(c){a=f(c);var d=g(a),i=h(a);b=e([1,0,0,0,0,d,i,0,0,-i,d,0,0,0,0,1])}};d.K=function(c){if(c){a=f(c);var d=g(a),i=h(a);b=e([d,0,-i,0,0,1,0,0,i,0,d,0,0,0,0,1])}};d.Zd=function(c){if(c){a=f(c);var d=g(a),i=h(a);b=e([d,i,0,0,-i,d,0,0,0,0,1,0,0,0,0,1])}};d.Xd=function(a,c){if(a||c){j=f(a);k=f(c);b=e([1,l(k),0,0,l(j),1,0,0,0,0,1,0,0,0,0,1])}};d.cb=function(c){var a=e(b,[1,0,0,0,0,1,0,0,0,0,1,0,c.x,c.y,0,1]);return n(a[12],a[13])};d.Wd=function(){return"matrix3d("+b.join(",")+")"};d.Vd=function(){return"progid:DXImageTransform.Microsoft.Matrix(M11="+b[0]+", M12="+b[4]+", M21="+b[1]+", M22="+b[5]+", SizingMethod='auto expand')"}}new function(){var a=this;function b(d,g){for(var j=d[0].length,i=d.length,h=g[0].length,f=[],c=0;c<i;c++)for(var k=f[c]=[],b=0;b<h;b++){for(var e=0,a=0;a<j;a++)e+=d[c][a]*g[a][b];k[b]=e}return f}a.q=function(b,c){return a.Ic(b,c,0)};a.m=function(b,c){return a.Ic(b,0,c)};a.Ic=function(a,c,d){return b(a,[[c,0],[0,d]])};a.cb=function(d,c){var a=b(d,[[c.x],[c.y]]);return u(a[0][0],a[1][0])}};var N={Kc:0,Jc:0,n:0,o:0,X:1,q:1,m:1,W:0,I:0,K:0,T:0,ab:0,C:0,Ab:0,ub:0};g.Md=function(a){var c=a||{};if(a)if(b.Nc(a))c={Vb:c};else if(b.Nc(a.c))c.c={Vb:a.c};return c};g.Ld=function(l,m,x,q,z,A,n){var a=m;if(l){a={};for(var g in m){var B=A[g]||1,w=z[g]||[0,1],f=(x-w[0])/w[1];f=c.min(c.max(f,0),1);f=f*B;var u=c.floor(f);if(f!=u)f-=u;var h=q.Vb||e.md,k,C=l[g],o=m[g];if(b.Oe(o)){h=q[g]||h;var y=h(f);k=C+o*y}else{k=b.V({tb:{}},l[g]);var v=q[g]||{};b.e(o.tb||o,function(d,a){h=v[a]||v.Vb||h;var c=h(f),b=d*c;k.tb[a]=b;k[a]+=b})}a[g]=k}var t=b.e(m,function(b,a){return N[a]!=j});t&&b.e(N,function(c,b){if(a[b]==j&&l[b]!==j)a[b]=l[b]});if(t){if(a.X)a.q=a.m=a.X;a.J=n.J;a.U=n.U;a.Ud=d}}if(m.c&&n.lb){var p=a.c.tb,s=(p.k||0)+(p.z||0),r=(p.i||0)+(p.A||0);a.i=(a.i||0)+r;a.k=(a.k||0)+s;a.c.i-=r;a.c.A-=r;a.c.k-=s;a.c.z-=s}if(a.c&&b.zd()&&!a.c.k&&!a.c.i&&!a.c.o&&!a.c.n&&a.c.A==n.J&&a.c.z==n.U)a.c=i;return a}};function n(){var a=this,d=[];function h(a,b){d.push({kc:a,lc:b})}function g(a,c){b.e(d,function(b,e){b.kc==a&&b.lc===c&&d.splice(e,1)})}a.pb=a.addEventListener=h;a.removeEventListener=g;a.f=function(a){var c=[].slice.call(arguments,1);b.e(d,function(b){b.kc==a&&b.lc.apply(k,c)})}}var m=function(z,C,f,K,N,M){z=z||0;var a=this,q,o,p,u,A=0,G,H,F,B,y=0,h=0,m=0,D,j,e,g,n,J,w=[],x;function P(a){e+=a;g+=a;j+=a;h+=a;m+=a;y+=a}function t(p){var i=p;if(n){if(i>=g||i<=e&&!J)i=((i-e)%n+n)%n+e;if(f.Id&&i<=e)i=e+n}if(!D||u||h!=i){var k=c.min(i,g);k=c.max(k,e);if(!D||u||k!=m){if(M){var l=(k-j)/(C||1);if(f.Pd)l=1-l;var o=b.Ld(N,M,l,G,F,H,f);if(x)b.e(o,function(b,a){x[a]&&x[a](K,b)});else b.H(K,o)}a.fc(m-j,k-j);var r=m,q=m=k;b.e(w,function(b,c){var a=i<=h?w[w.length-c-1]:b;a.R(m-y)});h=i;D=d;a.Db(r,q)}}}function E(a,b,d){b&&a.Mb(g);if(!d){e=c.min(e,a.Gc()+y);g=c.max(g,a.Sb()+y)}w.push(a)}var r=k.requestAnimationFrame||k.webkitRequestAnimationFrame||k.mozRequestAnimationFrame||k.msRequestAnimationFrame;if(b.Ge()&&b.Oc()<7)r=i;r=r||function(a){b.tc(a,f.Fc)};function I(){if(q){var d=b.M(),e=c.min(d-A,f.Ec),a=h+e*p;A=d;if(a*p>=o*p)a=o;t(a);if(!u&&a*p>=o*p)L(B);else r(I)}}function s(f,i,j){if(!q){q=d;u=j;B=i;f=c.max(f,e);f=c.min(f,g);o=f;p=o<h?-1:1;a.Dc();A=b.M();r(I)}}function L(b){if(q){u=q=B=l;a.Cc();b&&b()}}a.Bc=function(a,b,c){s(a?h+a:g,b,c)};a.Ac=s;a.Y=L;a.wd=function(a){s(a)};a.O=function(){return h};a.yc=function(){return o};a.ob=function(){return m};a.R=t;a.lb=function(a){t(h+a)};a.zc=function(){return q};a.Hd=function(a){n=a};a.Mb=P;a.Hc=function(a,b){E(a,0,b)};a.Ub=function(a){E(a,1)};a.Gc=function(){return e};a.Sb=function(){return g};a.Db=a.Dc=a.Cc=a.fc=b.xc;a.mc=b.M();f=b.V({Fc:16,Ec:50},f);n=f.gc;J=f.Od;x=f.Qd;e=j=z;g=z+C;H=f.ae||{};F=f.be||{};G=b.Md(f.fb)};new(function(){});var h=function(p,fc){var g=this;function Bc(){var a=this;m.call(a,-1e8,2e8);a.Re=function(){var b=a.ob(),d=c.floor(b),f=t(d),e=b-c.floor(b);return{bb:f,pe:d,ib:e}};a.Db=function(b,a){var e=c.floor(a);if(e!=a&&a>b)e++;Tb(e,d);g.f(h.se,t(a),t(b),a,b)}}function Ac(){var a=this;m.call(a,0,0,{gc:r});b.e(C,function(b){D&1&&b.Hd(r);a.Ub(b);b.Mb(kb/bc)})}function zc(){var a=this,b=Ub.eb;m.call(a,-1,2,{fb:e.Yd,Qd:{ib:Zb},gc:r},b,{ib:1},{ib:-2});a.dc=b}function mc(o,n){var b=this,e,f,j,k,c;m.call(b,-1e8,2e8,{Ec:100});b.Dc=function(){M=d;R=i;g.f(h.te,t(w.O()),w.O())};b.Cc=function(){M=l;k=l;var a=w.Re();g.f(h.xe,t(w.O()),w.O());!a.ib&&Dc(a.pe,s)};b.Db=function(h,g){var b;if(k)b=c;else{b=f;if(j){var d=g/j;b=a.ye(d)*(f-e)+e}}w.R(b)};b.yb=function(a,d,c,g){e=a;f=d;j=c;w.R(a);b.R(0);b.Ac(c,g)};b.je=function(a){k=d;c=a;b.Bc(a,i,d)};b.ue=function(a){c=a};w=new Bc;w.Hc(o);w.Hc(n)}function oc(){var c=this,a=Xb();b.s(a,0);b.L(a,"pointerEvents","none");c.eb=a;c.Ib=function(){b.G(a);b.Tb(a)}}function xc(o,f){var e=this,q,M,v,k,y=[],x,B,W,H,S,F,j,w,p;m.call(e,-u,u+1,{});function E(a){q&&q.ed();T(o,a,0);F=d;q=new I.N(o,I,b.Ed(b.g(o,"idle"))||lc);q.R(0)}function Z(){q.mc<I.mc&&E()}function O(p,r,o){if(!H){H=d;if(k&&o){var i=o.width,c=o.height,n=i,m=c;if(i&&c&&a.gb){if(a.gb&3&&(!(a.gb&4)||i>K||c>J)){var j=l,q=K/J*c/i;if(a.gb&1)j=q>1;else if(a.gb&2)j=q<1;n=j?i*J/c:K;m=j?J:c*K/i}b.j(k,n);b.l(k,m);b.D(k,(J-m)/2);b.B(k,(K-n)/2)}b.v(k,"absolute");g.f(h.qe,f)}}b.G(r);p&&p(e)}function Y(b,c,d,g){if(g==R&&s==f&&N)if(!Cc){var a=t(b);A.ge(a,f,c,e,d);c.he();U.Mb(a-U.Gc()-1);U.R(a);z.yb(b,b,0)}}function bb(b){if(b==R&&s==f){if(!j){var a=i;if(A)if(A.bb==f)a=A.Ee();else A.Ib();Z();j=new vc(o,f,a,q);j.gd(p)}!j.zc()&&j.Ob()}}function G(d,g,l){if(d==f){if(d!=g)C[g]&&C[g].ad();else!l&&j&&j.Le();p&&p.Gb();var m=R=b.M();e.kb(b.E(i,bb,m))}else{var k=c.min(f,d),h=c.max(f,d),o=c.min(h-k,k+r-h),n=u+a.ve-1;(!S||o<=n)&&e.kb()}}function db(){if(s==f&&j){j.Y();p&&p.we();p&&p.re();j.Xc()}}function eb(){s==f&&j&&j.Y()}function ab(a){!P&&g.f(h.ne,f,a)}function Q(){p=w.pInstance;j&&j.gd(p)}e.kb=function(c,a){a=a||v;if(y.length&&!H){b.Q(a);if(!W){W=d;g.f(h.Be,f);b.e(y,function(a){if(!b.p(a,"src")){a.src=b.g(a,"src2");b.P(a,a["display-origin"])}})}b.Td(y,k,b.E(i,O,c,a))}else O(c,a)};e.Se=function(){var j=f;if(a.Tc<0)j-=r;var d=j+a.Tc*tc;if(D&2)d=t(d);if(!(D&1)&&!ib)d=c.max(0,c.min(d,r-u));if(d!=f){if(A){var g=A.Pe(r);if(g){var k=R=b.M(),h=C[t(d)];return h.kb(b.E(i,Y,d,h,g,k),v)}}cb(d)}else if(a.hb){e.ad();G(f,f)}};e.Pb=function(){G(f,f,d)};e.ad=function(){p&&p.we();p&&p.re();e.Rc();j&&j.Fe();j=i;E()};e.he=function(){b.G(o)};e.Rc=function(){b.Q(o)};e.Cd=function(){p&&p.Gb()};function T(a,c,e){if(b.p(a,"jssor-slider"))return;if(!F){if(a.tagName=="IMG"){y.push(a);if(!b.p(a,"src")){S=d;a["display-origin"]=b.P(a);b.G(a)}}if(e){b.s(a,(b.s(a)||0)+1);b.wc(a,0);b.Lc(a,0);b.mb(a,{C:0})}}var f=b.xb(a);b.e(f,function(f){var h=f.tagName,i=b.g(f,"u");if(i=="player"&&!w){w=f;if(w.pInstance)Q();else b.a(w,"dataavailable",Q)}if(i=="caption"){if(c){b.Pc(f,b.g(f,"to"));b.oe(f,b.g(f,"bf"));b.g(f,"3d")&&b.me(f,"preserve-3d")}else if(!b.id()){var g=b.db(f,l,d);b.Bb(g,f,a);b.vb(f,a);f=g;c=d}}else if(!F&&!e&&!k){if(h=="A"){if(b.g(f,"u")=="image")k=b.Ae(f,"IMG");else k=b.u(f,"image",d);if(k){x=f;b.P(x,"block");b.H(x,V);B=b.db(x,d);b.v(x,"relative");b.Xb(B,0);b.L(B,"backgroundColor","#000")}}else if(h=="IMG"&&b.g(f,"u")=="image")k=f;if(k){k.border=0;b.H(k,V)}}T(f,c,e+1)})}e.fc=function(c,b){var a=u-b;Zb(M,a)};e.bb=f;n.call(e);b.le(o,b.g(o,"p"));b.Qe(o,b.g(o,"po"));var L=b.u(o,"thumb",d);if(L){b.db(L);b.G(L)}b.Q(o);v=b.db(gb);b.s(v,1e3);b.a(o,"click",ab);E(d);e.De=k;e.Sc=B;e.dc=M=o;b.S(M,v);g.pb(203,G);g.pb(28,eb);g.pb(24,db)}function vc(y,f,p,q){var a=this,n=0,u=0,i,j,e,c,k,t,r,o=C[f];m.call(a,0,0);function v(){b.Tb(L);cc&&k&&o.Sc&&b.S(L,o.Sc);b.Q(L,!k&&o.De)}function w(){a.Ob()}function x(b){r=b;a.Y();a.Ob()}a.Ob=function(){var b=a.ob();if(!B&&!M&&!r&&s==f){if(!b){if(i&&!k){k=d;a.Xc(d);g.f(h.xd,f,n,u,i,c)}v()}var l,p=h.Uc;if(b!=c)if(b==e)l=c;else if(b==j)l=e;else if(!b)l=j;else l=a.yc();g.f(p,f,b,n,j,e,c);var m=N&&(!E||F);if(b==c)(e!=c&&!(E&12)||m)&&o.Se();else(m||b!=e)&&a.Ac(l,w)}};a.Le=function(){e==c&&e==a.ob()&&a.R(j)};a.Fe=function(){A&&A.bb==f&&A.Ib();var b=a.ob();b<c&&g.f(h.Uc,f,-b-1,n,j,e,c)};a.Xc=function(a){p&&b.Hb(lb,a&&p.uc.Ye?"":"hidden")};a.fc=function(b,a){if(k&&a>=i){k=l;v();o.Rc();A.Ib();g.f(h.vd,f,n,u,i,c)}g.f(h.ud,f,a,n,j,e,c)};a.gd=function(a){if(a&&!t){t=a;a.pb($JssorPlayer$.ce,x)}};p&&a.Ub(p);i=a.Sb();a.Ub(q);j=i+q.Vc;e=i+q.Wc;c=a.Sb()}function Kb(a,c,d){b.B(a,c);b.D(a,d)}function Zb(c,b){var a=x>0?x:fb,d=zb*b*(a&1),e=Ab*b*(a>>1&1);Kb(c,d,e)}function Pb(){qb=M;Ib=z.yc();G=w.O()}function gc(){Pb();if(B||!F&&E&12){z.Y();g.f(h.sd)}}function ec(f){if(!B&&(F||!(E&12))&&!z.zc()){var d=w.O(),b=c.ceil(G);if(f&&c.abs(H)>=a.Qc){b=c.ceil(d);b+=jb}if(!(D&1))b=c.min(r-u,c.max(b,0));var e=c.abs(b-d);e=1-c.pow(1-e,5);if(!P&&qb)z.wd(Ib);else if(d==b){tb.Cd();tb.Pb()}else z.yb(d,b,e*Vb)}}function Hb(a){!b.g(b.Nb(a),"nodrag")&&b.Fb(a)}function rc(a){Yb(a,1)}function Yb(a,c){a=b.qc(a);var k=b.Nb(a);if(!O&&!b.g(k,"nodrag")&&sc()&&(!c||a.touches.length==1)){B=d;yb=l;R=i;b.a(f,c?"touchmove":"mousemove",Bb);b.M();P=0;gc();if(!qb)x=0;if(c){var j=a.touches[0];ub=j.clientX;vb=j.clientY}else{var e=b.vc(a);ub=e.x;vb=e.y}H=0;hb=0;jb=0;g.f(h.rd,t(G),G,a)}}function Bb(e){if(B){e=b.qc(e);var f;if(e.type!="mousemove"){var l=e.touches[0];f={x:l.clientX,y:l.clientY}}else f=b.vc(e);if(f){var j=f.x-ub,k=f.y-vb;if(c.floor(G)!=G)x=x||fb&O;if((j||k)&&!x){if(O==3)if(c.abs(k)>c.abs(j))x=2;else x=1;else x=O;if(ob&&x==1&&c.abs(k)-c.abs(j)>3)yb=d}if(x){var a=k,i=Ab;if(x==1){a=j;i=zb}if(!(D&1)){if(a>0){var g=i*s,h=a-g;if(h>0)a=g+c.sqrt(h)*5}if(a<0){var g=i*(r-u-s),h=-a-g;if(h>0)a=-g-c.sqrt(h)*5}}if(H-hb<-2)jb=0;else if(H-hb>2)jb=-1;hb=H;H=a;sb=G-H/i/(Y||1);if(H&&x&&!yb){b.Fb(e);if(!M)z.je(sb);else z.ue(sb)}}}}}function bb(){qc();if(B){B=l;b.M();b.F(f,"mousemove",Bb);b.F(f,"touchmove",Bb);P=H;z.Y();var a=w.O();g.f(h.qd,t(a),a,t(G),G);E&12&&Pb();ec(d)}}function jc(c){if(P){b.Ne(c);var a=b.Nb(c);while(a&&v!==a){a.tagName=="A"&&b.Fb(c);try{a=a.parentNode}catch(d){break}}}}function Jb(a){C[s];s=t(a);tb=C[s];Tb(a);return s}function Dc(a,b){x=0;Jb(a);g.f(h.pd,t(a),b)}function Tb(a,c){wb=a;b.e(S,function(b){b.jc(t(a),a,c)})}function sc(){var b=h.Yc||0,a=X;if(ob)a&1&&(a&=1);h.Yc|=a;return O=a&~b}function qc(){if(O){h.Yc&=~X;O=0}}function Xb(){var a=b.Lb();b.H(a,V);b.v(a,"absolute");return a}function t(a){return(a%r+r)%r}function kc(b,d){if(d)if(!D){b=c.min(c.max(b+wb,0),r-u);d=l}else if(D&2){b=t(b+wb);d=l}cb(b,a.ic,d)}function xb(){b.e(S,function(a){a.pc(a.Cb.Xe<=F)})}function hc(){if(!F){F=1;xb();if(!B){E&12&&ec();E&3&&C[s].Pb()}}}function Ec(){if(F){F=0;xb();B||!(E&12)||gc()}}function ic(){V={Jb:K,Kb:J,k:0,i:0};b.e(T,function(a){b.H(a,V);b.v(a,"absolute");b.Hb(a,"hidden");b.G(a)});b.H(gb,V)}function ab(b,a){cb(b,a,d)}function cb(g,f,k){if(Rb&&(!B&&(F||!(E&12))||a.Zc)){M=d;B=l;z.Y();if(f==j)f=Vb;var e=Cb.ob(),b=g;if(k){b=e+g;if(g>0)b=c.ceil(b);else b=c.floor(b)}if(D&2)b=t(b);if(!(D&1))b=c.max(0,c.min(b,r-u));var i=(b-e)%r;b=e+i;var h=e==b?0:f*c.abs(i);h=c.min(h,f*u*1.5);z.yb(e,b,h||1)}}g.Bc=function(){if(!N){N=d;C[s]&&C[s].Pb()}};function W(){return b.j(y||p)}function nb(){return b.l(y||p)}g.J=W;g.U=nb;function Eb(c,d){if(c==j)return b.j(p);if(!y){var a=b.Lb(f);b.Mc(a,b.Mc(p));b.zb(a,b.zb(p));b.P(a,"block");b.v(a,"relative");b.D(a,0);b.B(a,0);b.Hb(a,"visible");y=b.Lb(f);b.v(y,"absolute");b.D(y,0);b.B(y,0);b.j(y,b.j(p));b.l(y,b.l(p));b.Pc(y,"0 0");b.S(y,a);var h=b.xb(p);b.S(p,y);b.L(p,"backgroundImage","");b.e(h,function(c){b.S(b.g(c,"noscale")?p:a,c);b.g(c,"autocenter")&&Lb.push(c)})}Y=c/(d?b.l:b.j)(y);b.Me(y,Y);var g=d?Y*W():c,e=d?c:Y*nb();b.j(p,g);b.l(p,e);b.e(Lb,function(a){var c=b.Dd(b.g(a,"autocenter"));b.nd(a,c)})}n.call(g);g.eb=p=b.sb(p);var a=b.V({gb:0,ve:1,Wb:1,Yb:0,Zb:l,hb:1,qb:d,Zc:d,Tc:1,bd:3e3,cd:1,ic:500,ye:e.Sd,Qc:20,bc:0,Z:1,cc:0,ee:1,ec:1,dd:1},fc);a.qb=a.qb&&b.Ce();if(a.Rd!=j)a.bd=a.Rd;if(a.Nd!=j)a.cc=a.Nd;var fb=a.ec&3,tc=(a.ec&4)/-4||1,mb=a.Ze,I=b.V({N:q,qb:a.qb},a.Te);I.Rb=I.Rb||I.We;var Fb=a.Kd,Z=a.Jd,eb=a.Ue,Q=!a.ee,y,v=b.u(p,"slides",Q),gb=b.u(p,"loading",Q)||b.Lb(f),Nb=b.u(p,"navigator",Q),dc=b.u(p,"arrowleft",Q),ac=b.u(p,"arrowright",Q),Mb=b.u(p,"thumbnavigator",Q),pc=b.j(v),nc=b.l(v),V,T=[],uc=b.xb(v);b.e(uc,function(a){a.tagName=="DIV"&&!b.g(a,"u")&&T.push(a);b.s(a,(b.s(a)||0)+1)});var s=-1,wb,tb,r=T.length,K=a.fd||pc,J=a.td||nc,Wb=a.bc,zb=K+Wb,Ab=J+Wb,bc=fb&1?zb:Ab,u=c.min(a.Z,r),lb,x,O,yb,S=[],Qb,Sb,Ob,cc,Cc,N,E=a.cd,lc=a.bd,Vb=a.ic,rb,ib,kb,Rb=u<r,D=Rb?a.hb:0,X,P,F=1,M,B,R,ub=0,vb=0,H,hb,jb,Cb,w,U,z,Ub=new oc,Y,Lb=[];if(r){if(a.qb)Kb=function(a,c,d){b.mb(a,{T:c,ab:d})};N=a.Zb;g.Cb=fc;ic();b.p(p,"jssor-slider",d);b.s(v,b.s(v)||0);b.v(v,"absolute");lb=b.db(v,d);b.Bb(lb,v);if(mb){cc=mb.Ve;rb=mb.N;ib=u==1&&r>1&&rb&&(!b.id()||b.Oc()>=8)}kb=ib||u>=r||!(D&1)?0:a.cc;X=(u>1||kb?fb:-1)&a.dd;var Gb=v,C=[],A,L,Db=b.ie(),ob=Db.ke,G,qb,Ib,sb;Db.ld&&b.L(Gb,Db.ld,([i,"pan-y","pan-x","none"])[X]||"");U=new zc;if(ib)A=new rb(Ub,K,J,mb,ob);b.S(lb,U.dc);b.Hb(v,"hidden");L=Xb();b.L(L,"backgroundColor","#000");b.Xb(L,0);b.Bb(L,Gb.firstChild,Gb);for(var db=0;db<T.length;db++){var wc=T[db],yc=new xc(wc,db);C.push(yc)}b.G(gb);Cb=new Ac;z=new mc(Cb,U);b.a(v,"click",jc,d);b.a(p,"mouseout",b.Qb(hc,p));b.a(p,"mouseover",b.Qb(Ec,p));if(X){b.a(v,"mousedown",Yb);b.a(v,"touchstart",rc);b.a(v,"dragstart",Hb);b.a(v,"selectstart",Hb);b.a(f,"mouseup",bb);b.a(f,"touchend",bb);b.a(f,"touchcancel",bb);b.a(k,"blur",bb)}E&=ob?10:5;if(Nb&&Fb){Qb=new Fb.N(Nb,Fb,W(),nb());S.push(Qb)}if(Z&&dc&&ac){Z.hb=D;Z.Z=u;Sb=new Z.N(dc,ac,Z,W(),nb());S.push(Sb)}if(Mb&&eb){eb.Yb=a.Yb;Ob=new eb.N(Mb,eb);S.push(Ob)}b.e(S,function(a){a.nc(r,C,gb);a.pb(o.oc,kc)});b.L(p,"visibility","visible");Eb(W());xb();a.Wb&&b.a(f,"keydown",function(b){if(b.keyCode==37)ab(-a.Wb);else b.keyCode==39&&ab(a.Wb)});var pb=a.Yb;if(!(D&1))pb=c.max(0,c.min(pb,r-u));z.yb(pb,pb,0)}};h.ne=21;h.rd=22;h.qd=23;h.te=24;h.xe=25;h.Be=26;h.qe=27;h.sd=28;h.se=202;h.pd=203;h.xd=206;h.vd=207;h.ud=208;h.Uc=209;var o={oc:1},r=function(e,C){var f=this;n.call(f);e=b.sb(e);var s,A,z,r,k=0,a,m,j,w,x,h,g,q,p,B=[],y=[];function v(a){a!=-1&&y[a].de(a==k)}function t(a){f.f(o.oc,a*m)}f.eb=e;f.jc=function(a){if(a!=r){var d=k,b=c.floor(a/m);k=b;r=a;v(d);v(b)}};f.pc=function(a){b.Q(e,a)};var u;f.nc=function(D){if(!u){s=c.ceil(D/m);k=0;var o=q+w,r=p+x,n=c.ceil(s/j)-1;A=q+o*(!h?n:j-1);z=p+r*(h?n:j-1);b.j(e,A);b.l(e,z);for(var f=0;f<s;f++){var C=b.Je();b.Ke(C,f+1);var l=b.Fd(g,"numbertemplate",C,d);b.v(l,"absolute");var v=f%(n+1);b.B(l,!h?o*v:f%j*o);b.D(l,h?r*v:c.floor(f/(n+1))*r);b.S(e,l);B[f]=l;a.wb&1&&b.a(l,"click",b.E(i,t,f));a.wb&2&&b.a(l,"mouseover",b.Qb(b.E(i,t,f),l));y[f]=b.ac(l)}u=d}};f.Cb=a=b.V({jd:10,kd:10,hd:1,wb:1},C);g=b.u(e,"prototype");q=b.j(g);p=b.l(g);b.vb(g,e);m=a.Eb||1;j=a.Ad||1;w=a.jd;x=a.kd;h=a.hd-1;a.hc==l&&b.p(e,"noscale",d);a.rb&&b.p(e,"autocenter",a.rb)},s=function(a,g,h){var c=this;n.call(c);var r,e,f,j;b.j(a);b.l(a);var p,m;function k(a){c.f(o.oc,a,d)}function t(c){b.Q(a,c);b.Q(g,c)}function s(){p.Gb(h.hb||e>0);m.Gb(h.hb||e<r-h.Z)}c.jc=function(b,a,c){if(c)e=a;else{e=b;s()}};c.pc=t;var q;c.nc=function(c){r=c;e=0;if(!q){b.a(a,"click",b.E(i,k,-j));b.a(g,"click",b.E(i,k,j));p=b.ac(a);m=b.ac(g);q=d}};c.Cb=f=b.V({Eb:1},h);j=f.Eb;if(f.hc==l){b.p(a,"noscale",d);b.p(g,"noscale",d)}if(f.rb){b.p(a,"autocenter",f.rb);b.p(g,"autocenter",f.rb)}};function q(e,d,c){var a=this;m.call(a,0,c);a.ed=b.xc;a.Vc=0;a.Wc=c}jssor_1_slider_init=function(){var a={Zb:d,fd:386,bc:80,Z:3,cc:466,Jd:{N:s,Eb:3},Kd:{N:r,Eb:3,wb:3}};new h("jssor_1",a)}})(window,document,Math,null,true,false)
+</script>
+<style>
+.jssorb05{position:absolute}.jssorb05 div,.jssorb05 div:hover,.jssorb05 .av{position:absolute;width:16px;height:16px;background:url('JavaScript/Buttons/b05.png') no-repeat;overflow:hidden;cursor:pointer}.jssorb05 div{background-position:-7px -7px}.jssorb05 div:hover,.jssorb05 .av:hover{background-position:-37px -7px}.jssorb05 .av{background-position:-67px -7px}.jssorb05 .dn,.jssorb05 .dn:hover{background-position:-97px -7px}.jssora03l,.jssora03r{display:block;position:absolute;width:55px;height:55px;cursor:pointer;background:url('JavaScript/Buttons/a03.png') no-repeat;overflow:hidden}.jssora03l{background-position:-3px -33px}.jssora03r{background-position:-63px -33px}.jssora03l:hover{background-position:-123px -33px}.jssora03r:hover{background-position:-183px -33px}.jssora03l.jssora03ldn{background-position:-243px -33px}.jssora03r.jssora03rdn{background-position:-303px -33px}.jssora03l.jssora03lds{background-position:-3px -33px;opacity:.3;pointer-events:none}.jssora03r.jssora03rds{background-position:-63px -33px;opacity:.3;pointer-events:none}
+</style>
+<div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1318px; height: 386px; overflow: hidden; visibility: hidden;">
+<!-- Loading Screen -->
+<div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+<div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+<div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+</div>
+<div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1318px; height: 386px; overflow: hidden;">
+<div data-p="96.50">
+<img data-u="image" src="CSS/images/projectframe.png" alt="project" />
+<div style="position:absolute;top:117px;left:-8px;width:400px;height:150px;z-index:0;background-color:rgba(223,96,3,0.52);"></div>
+<a href="tinkernexus.com/Sign_Up/sign-up.html" style="display: block; position:absolute;top:230px;left:114px;width:150px;height:35px;z-index:0;font-family:stencil;font-size:20px;color:#c8c8c8;line-height:30px;text-align:center;">SIGN UP!</a>
+<div style="position:absolute;top:160px;left:1px;width:400px;height:60px;z-index:0;font-family:Arial;font-size:20px;color:#e1dede;line-height:30px;text-align:left;">Nothing to see here...
+(Not until you guys start making some AWESOME projects! :D)
+</div>
+</div>
+<div data-p="96.50" style="display:none;">
+<img data-u="image" src="CSS/images/projectframe.png" alt="project" />
+<div style="position:absolute;top:117px;left:-8px;width:400px;height:150px;z-index:0;background-color:rgba(223,96,3,0.52);"></div>
+<a href="tinkernexus.com/Sign_Up/sign-up.html" style="display: block; position:absolute;top:230px;left:114px;width:150px;height:35px;z-index:0;font-family:stencil;font-size:20px;color:#c8c8c8;line-height:30px;text-align:center;">SIGN UP!</a>
+<div style="position:absolute;top:160px;left:1px;width:400px;height:60px;z-index:0;font-family:Arial;font-size:20px;color:#e1dede;line-height:30px;text-align:left;">Nothing to see here...
+(Not until you guys start making some AWESOME projects! :D)
+</div>
+</div>
+<div data-p="96.50" style="display:none;">
+<img data-u="image" src="CSS/images/projectframe.png" alt="project" />
+<div style="position:absolute;top:117px;left:-8px;width:400px;height:150px;z-index:0;background-color:rgba(223,96,3,0.52);"></div>
+<a href="tinkernexus.com/Sign_Up/sign-up.html" style="display: block; position:absolute;top:230px;left:114px;width:150px;height:35px;z-index:0;font-family:stencil;font-size:20px;color:#c8c8c8;line-height:30px;text-align:center;">SIGN UP!</a>
+<div style="position:absolute;top:160px;left:1px;width:400px;height:60px;z-index:0;font-family:Arial;font-size:20px;color:#e1dede;line-height:30px;text-align:left;">Nothing to see here...
+(Not until you guys start making some AWESOME projects! :D)
+</div>
+</div>
+<div data-p="96.50" style="display:none;">
+<img data-u="image" src="CSS/images/projectframe.png" alt="project" />
+<div style="position:absolute;top:117px;left:-8px;width:400px;height:150px;z-index:0;background-color:rgba(223,96,3,0.52);"></div>
+<a href="tinkernexus.com/Sign_Up/sign-up.html" style="display: block; position:absolute;top:230px;left:114px;width:150px;height:35px;z-index:0;font-family:stencil;font-size:20px;color:#c8c8c8;line-height:30px;text-align:center;">SIGN UP!</a>
+<div style="position:absolute;top:160px;left:1px;width:400px;height:60px;z-index:0;font-family:Arial;font-size:20px;color:#e1dede;line-height:30px;text-align:left;">Nothing to see here...
+(Not until you guys start making some AWESOME projects! :D)
+</div>
+</div>
+<div data-p="96.50" style="display:none;">
+<img data-u="image" src="CSS/images/projectframe.png" alt="project" />
+<div style="position:absolute;top:117px;left:-8px;width:400px;height:150px;z-index:0;background-color:rgba(223,96,3,0.52);"></div>
+<a href="tinkernexus.com/Sign_Up/sign-up.html" style="display: block; position:absolute;top:230px;left:114px;width:150px;height:35px;z-index:0;font-family:stencil;font-size:20px;color:#c8c8c8;line-height:30px;text-align:center;">SIGN UP!</a>
+<div style="position:absolute;top:160px;left:1px;width:400px;height:60px;z-index:0;font-family:Arial;font-size:20px;color:#e1dede;line-height:30px;text-align:left;">Nothing to see here...
+(Not until you guys start making some AWESOME projects! :D)
+</div>
+</div>
+<div data-p="96.50" style="display:none;">
+<img data-u="image" src="CSS/images/projectframe.png" alt="project" />
+<div style="position:absolute;top:117px;left:-8px;width:400px;height:150px;z-index:0;background-color:rgba(223,96,3,0.52);"></div>
+<a href="tinkernexus.com/Sign_Up/sign-up.html" style="display: block; position:absolute;top:230px;left:114px;width:150px;height:35px;z-index:0;font-family:stencil;font-size:20px;color:#c8c8c8;line-height:30px;text-align:center;">SIGN UP!</a>
+<div style="position:absolute;top:160px;left:1px;width:400px;height:60px;z-index:0;font-family:Arial;font-size:20px;color:#e1dede;line-height:30px;text-align:left;">Nothing to see here...
+(Not until you guys start making some AWESOME projects! :D)
+</div>
+</div>
+<div data-p="96.50" style="display:none;">
+<img data-u="image" src="CSS/images/projectframe.png" alt="project" />
+<div style="position:absolute;top:117px;left:-8px;width:400px;height:150px;z-index:0;background-color:rgba(223,96,3,0.52);"></div>
+<a href="tinkernexus.com/Sign_Up/sign-up.html" style="display: block; position:absolute;top:230px;left:114px;width:150px;height:35px;z-index:0;font-family:stencil;font-size:20px;color:#c8c8c8;line-height:30px;text-align:center;">SIGN UP!</a>
+<div style="position:absolute;top:160px;left:1px;width:400px;height:60px;z-index:0;font-family:Arial;font-size:20px;color:#e1dede;line-height:30px;text-align:left;">Nothing to see here...
+(Not until you guys start making some AWESOME projects! :D)
+</div>
+</div>
+<div data-p="96.50" style="display:none;">
+<img data-u="image" src="CSS/images/projectframe.png" alt="project" />
+<div style="position:absolute;top:117px;left:-8px;width:400px;height:150px;z-index:0;background-color:rgba(223,96,3,0.52);"></div>
+<a href="tinkernexus.com/Sign_Up/sign-up.html" style="display: block; position:absolute;top:230px;left:114px;width:150px;height:35px;z-index:0;font-family:stencil;font-size:20px;color:#c8c8c8;line-height:30px;text-align:center;">SIGN UP!</a>
+<div style="position:absolute;top:160px;left:1px;width:400px;height:60px;z-index:0;font-family:Arial;font-size:20px;color:#e1dede;line-height:30px;text-align:left;">Nothing to see here...
+(Not until you guys start making some AWESOME projects! :D)
+</div>
+</div>
+<div data-p="96.50" style="display:none;">
+<img data-u="image" src="CSS/images/projectframe.png" alt="project" />
+<div style="position:absolute;top:117px;left:-8px;width:400px;height:150px;z-index:0;background-color:rgba(223,96,3,0.52);"></div>
+<a href="tinkernexus.com/Sign_Up/sign-up.html" style="display: block; position:absolute;top:230px;left:114px;width:150px;height:35px;z-index:0;font-family:stencil;font-size:20px;color:#c8c8c8;line-height:30px;text-align:center;">SIGN UP!</a>
+<div style="position:absolute;top:160px;left:1px;width:400px;height:60px;z-index:0;font-family:Arial;font-size:20px;color:#e1dede;line-height:30px;text-align:left;">Nothing to see here...
+(Not until you guys start making some AWESOME projects! :D)
+</div>
+</div>
+</div>
+<!-- Bullet Navigator -->
+<div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+<!-- bullet navigator item prototype -->
+<div data-u="prototype" style="width:16px;height:16px;"></div>
+</div>
+<!-- Arrow Navigator -->
+<span data-u="arrowleft" class="jssora03l" style="top:0px;left:0px;width:55px;height:55px;" data-autocenter="2"></span>
+<span data-u="arrowright" class="jssora03r" style="top:0px;right:0px;width:55px;height:55px;" data-autocenter="2"></span>
+</div>
+<script type="text/javascript">jssor_1_slider_init();</script>
+<!-- #endregion Jssor Slider End -->
+</body>
+</html>
+
+        
+        
+        <footer class="row bottomrow">
+            <div class="col-md-1">
+                <a href="About_Us/about-us.html"><strong>About Us! :)</strong></a>
+            </div>
+            
+            <div class="col-md-1">
+                <a><strong>Start a Project</strong></a>
+            </div> 
+            
+            <div class="col-md-1">
+                <a href="Contact_Us/contact-us.html"><strong>Contact</strong></a>
+            </div>
+            
+            <div class="col-md-1">
+                <a href="Terms/terms.html"><strong>Terms</strong></a>
+            </div> 
+            
+            <div class="col-md-1">
+                <a><strong>Advertise</strong></a>
+            </div> 
+            
+            <div class="col-md-1">
+                <a><strong>Careers</strong></a>
+            </div> 
+            
+            <div class="col-md-1">
+                <a><strong>Help&nbsp;and&nbsp;FAQ</strong></a>
+            </div>       
+        </footer>
+        
+    </div>
+</body>
+       
+</html>
