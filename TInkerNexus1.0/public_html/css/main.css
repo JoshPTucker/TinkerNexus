@@ -1,0 +1,332 @@
+
+/* 
+    Created on : Apr 9, 2017, 3:32:21 PM
+    Author     : Omiete Erekosima
+*/
+
+/********************************
+*
+*       CSS RESETS
+*
+********************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+/**********************************
+*
+* Clear Fix Hack
+*
+**********************************/
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+.group:after {
+    clear: both;
+}
+.group {
+    clear: both;
+    *zoom: 1;
+}
+
+
+/***********************************
+*
+*           Background
+*
+***********************************/
+#ani-background {
+    height: 1000px;
+    background: linear-gradient(299deg, #f300b5, #f37800);
+    background-size: 200% 200%;
+    -webkit-animation: pcolor 30s ease infinite;
+    -moz-animation: pcolor 30s ease infinite;
+    -o-animation: pcolor 30s ease infinite;
+    animation: pcolor 30s ease infinite;
+}
+@-webkit-keyframes pcolor {
+    0%{background-position:0% 15%}
+    50%{background-position:100% 86%}
+    100%{background-position:0% 15%}
+}
+@-moz-keyframes pcolor{
+    0%{background-position:0% 15%}
+    50%{background-position:100% 86%}
+    100%{background-position:0% 15%}
+}
+@-o-keyframes pcolor {
+    0%{background-position:0% 15%}
+    50%{background-position:100% 86%}
+    100%{background-position:0% 15%}
+}
+@keyframes pcolor {
+    0%{background-position:0% 15%}
+    50%{background-position:100% 86%}
+    100%{background-position:0% 15%}
+}
+
+body.bg-overlay{
+    background-image: url("images/overlay3.png");
+}
+
+
+/****************************************
+*
+*               Fonts
+*
+****************************************/
+@font-face{
+    font-family: "neuropol";
+    src: url("fonts/neuropol x free.ttf") format("truetype");
+}
+@font-face{
+    font-family: "Free Sans Bold";
+    src: url("fonts/FreeSansBold.ttf") format("truetype");
+}
+@font-face{
+    font-family: "neuropolitical";
+    src: url("fonts/neuropolitical rg.tff") format("truetype");
+}
+
+h1 {
+    font-family: neuropol, arial, sans-serif;
+    font-weight: bold;
+}
+h2{
+    font-family: neuropolitical, neuropol, arial, sans-serif;
+    font-size: 3.5em;
+    text-align: center;
+}
+h3{
+    font-family: "Free Sans Bold", sans, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: whitesmoke;
+    text-decoration: underline;
+    text-align: center;
+    margin: 0 auto;
+}
+p {
+    font-family: "Free Sans Bold",sans,sans-serif;
+    color: white;
+}
+label {
+    font-family: "Free Sans Bold",sans,sans-serif;
+    color: white;
+}
+.purple {
+    color: purple;
+}
+.orange {
+    color: orangered;
+}
+.login-area a:hover {
+    color: #f37800;
+}
+
+
+
+/*************************************
+*
+*           Generic
+*
+*************************************/
+header{
+    position: relative;
+}
+header button {
+    display: none;
+}
+nav.primary-nav {
+    display: none;
+}
+figure{
+    display: inline-block;
+    margin-left: 44.5%;
+}
+
+.login-area{
+    display: inline-block;
+    float: right;
+    background-color: rgba(57,56,56,0.5);
+    width: 25%;
+    height: 80px;
+}
+form p {
+    font-weight: bold;
+}
+.login-area {
+    background: 
+}
+
+.banner {
+    clear: both;
+    width: 100%;
+    background-color: rgba(0, 221, 204, 0.6);
+    /* IE9, iOS 3.2+ */
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIxMDAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjAlIj48c3RvcCBzdG9wLWNvbG9yPSIjMDBkZGY5IiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiMwMGRkZmYiIHN0b3Atb3BhY2l0eT0iMC4xMSIgb2Zmc2V0PSIwLjAzNDAyMDYxODU1NjcwMDk4Ii8+PHN0b3Agc3RvcC1jb2xvcj0iIzAwZGRjMCIgc3RvcC1vcGFjaXR5PSIwLjExIiBvZmZzZXQ9IjAuMDM0Ii8+PHN0b3Agc3RvcC1jb2xvcj0iIzAwZGRjMCIgc3RvcC1vcGFjaXR5PSIwLjkxIiBvZmZzZXQ9IjAuMzk3Ii8+PHN0b3Agc3RvcC1jb2xvcj0iIzAwZGRjMCIgc3RvcC1vcGFjaXR5PSIwLjkxIiBvZmZzZXQ9IjAuNjE4Ii8+PHN0b3Agc3RvcC1jb2xvcj0iIzAwZGRmZiIgc3RvcC1vcGFjaXR5PSIwLjExIiBvZmZzZXQ9IjEiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjdnNnZykiIC8+PC9zdmc+);
+    background-image: -webkit-gradient(linear, 100% 0%, 0% 0%,color-stop(0, rgb(0, 221, 249)),color-stop(0.034, rgba(0, 221, 255, 0.11)),color-stop(0.034, rgba(0, 221, 192, 0.11)),color-stop(0.397, rgba(0, 221, 192, 0.91)),color-stop(0.618, rgba(0, 221, 192, 0.91)),color-stop(1, rgba(0, 221, 255, 0.11)));
+    /* Android 2.3 */
+    background-image: -webkit-repeating-linear-gradient(right,rgba(0, 221, 192, 0.11) 3.4%,rgba(0, 221, 192, 0.91) 39.7%,rgba(0, 221, 192, 0.91) 61.8%,rgba(0, 221, 255, 0.11) 100%);
+    /* IE10+ */
+    background-image: repeating-linear-gradient(to left,rgba(0, 221, 192, 0.11) 3.4%,rgba(0, 221, 192, 0.91) 39.7%,rgba(0, 221, 192, 0.91) 61.8%,rgba(0, 221, 255, 0.11) 100%);
+    background-image: -ms-repeating-linear-gradient(right,rgba(0, 221, 192, 0.11) 3.4%,rgba(0, 221, 192, 0.91) 39.7%,rgba(0, 221, 192, 0.91) 61.8%,rgba(0, 221, 255, 0.11) 100%);
+}
+.banner h1{
+    text-align: center;
+    font-size: 5.5em;
+}
+.banner-2{
+    background-color: rgba(0,221,192,.45);
+    height: 7em;
+}
+.banner-2 h2 {
+    margin: auto auto;
+    line-height: 2em;
+}
+
+
+
+/***************************************
+*
+*               Carousel
+*
+***************************************/
+.project-frame{
+    width: 100px;
+}
+div.slick-list.draggable {
+    width: 1400px;
+    margin-right: 0px;
+}
+.carousel{
+    display: inline-block;
+    float: left;
+    width: 100%;
+    margin-top: 1.5%;
+}
+.project-frame img{
+    width: 300px;
+    height: auto;
+}
+.pArrow, .nArrow {
+    z-index: 999;
+}
+.pArrow {
+    float: left;
+}
+.nArrow {
+    float: right;
+}
+/***************************************
+*
+*           Footer Stuff
+*
+***************************************/
+footer {
+    display: flex;
+    background-color: rgba(0,221,192,.45);
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100px;
+}
+
+footer p{
+    display: inline-block;
+    line-height: 6em;
+    width: 10%;
+    height: 100%;
+}
+footer a{
+    display: inline-block;
+    width: 100%;
+    heigth: 100%;
+}
+footer a:hover {
+    background-color: rgba(255,255,255,.3);
+    color: #f37800;
+}
+
+/***************************************
+*
+*           Media   Queries
+*
+***************************************/
+@media screen and (max-width: 375px){
+    /* gradient background */
+    header{
+        width: 100%;
+        background-color: rgba(0, 221, 204, 0.6);
+        /* IE9, iOS 3.2+ */
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIxMDAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjAlIj48c3RvcCBzdG9wLWNvbG9yPSIjMDBkZGY5IiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiMwMGRkZmYiIHN0b3Atb3BhY2l0eT0iMC4xMSIgb2Zmc2V0PSIwLjAzNDAyMDYxODU1NjcwMDk4Ii8+PHN0b3Agc3RvcC1jb2xvcj0iIzAwZGRjMCIgc3RvcC1vcGFjaXR5PSIwLjExIiBvZmZzZXQ9IjAuMDM0Ii8+PHN0b3Agc3RvcC1jb2xvcj0iIzAwZGRjMCIgc3RvcC1vcGFjaXR5PSIwLjkxIiBvZmZzZXQ9IjAuMzk3Ii8+PHN0b3Agc3RvcC1jb2xvcj0iIzAwZGRjMCIgc3RvcC1vcGFjaXR5PSIwLjkxIiBvZmZzZXQ9IjAuNjE4Ii8+PHN0b3Agc3RvcC1jb2xvcj0iIzAwZGRmZiIgc3RvcC1vcGFjaXR5PSIwLjExIiBvZmZzZXQ9IjEiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjdnNnZykiIC8+PC9zdmc+);
+        background-image: -webkit-gradient(linear, 100% 0%, 0% 0%,color-stop(0, rgb(0, 221, 249)),color-stop(0.034, rgba(0, 221, 255, 0.11)),color-stop(0.034, rgba(0, 221, 192, 0.11)),color-stop(0.397, rgba(0, 221, 192, 0.91)),color-stop(0.618, rgba(0, 221, 192, 0.91)),color-stop(1, rgba(0, 221, 255, 0.11)));
+        /* Android 2.3 */
+        background-image: -webkit-repeating-linear-gradient(right,rgba(0, 221, 192, 0.11) 3.4%,rgba(0, 221, 192, 0.91) 39.7%,rgba(0, 221, 192, 0.91) 61.8%,rgba(0, 221, 255, 0.11) 100%);
+        /* IE10+ */
+        background-image: repeating-linear-gradient(to left,rgba(0, 221, 192, 0.11) 3.4%,rgba(0, 221, 192, 0.91) 39.7%,rgba(0, 221, 192, 0.91) 61.8%,rgba(0, 221, 255, 0.11) 100%);
+        background-image: -ms-repeating-linear-gradient(right,rgba(0, 221, 192, 0.11) 3.4%,rgba(0, 221, 192, 0.91) 39.7%,rgba(0, 221, 192, 0.91) 61.8%,rgba(0, 221, 255, 0.11) 100%);
+    }
+    
+    figure img{
+        width: 2.5em;
+        height: auto;
+        float: left;
+    }
+    h1 {
+        font-size: 1.8em;
+        float: left;
+        margin-top: .5em;
+    }
+    h3 {
+        font-size: 1.2em;
+    }
+}/* end of media query */
